@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - develop
-      - 'feat/**'
-      - 'fix/**'
-      - 'chore/**'
+      - "feat/**"
+      - "fix/**"
+      - "chore/**"
   pull_request:
     branches: [develop, main]
   workflow_dispatch:
@@ -51,15 +51,18 @@ jobs:
       - name: Build release zips (prod naming, no Minecraft auth)
         env:
           NODE_ENV: production
-          CI: 'true'
-          SF5_CI_SKIP_FORGE_DOWNLOAD: 'true'
+          CI: "true"
+          SF5_CI_SKIP_FORGE_DOWNLOAD: "true"
         shell: bash
         run: |
           set -euo pipefail
-          # SF5_CI_SKIP_FORGE_DOWNLOAD lets the release script skip the Mojang-auth
-          # Forge installer download (handled in scripts/release/index.ts). Hard-fail
-          # if the release script fails — no silent fallback to dev mode.
-          npm run release
+          # The package.json `release` script is `npm install && ts-node ...` which is
+          # convenient for local dev but problematic in CI: the nested `npm install`
+          # re-triggers the `prepare` (husky install) lifecycle hook with a stripped PATH.
+          # We've already run `npm ci` above, so deps are installed — skip directly to
+          # ts-node. SF5_CI_SKIP_FORGE_DOWNLOAD makes scripts/release/index.ts skip the
+          # Mojang-auth Forge installer download.
+          ./node_modules/.bin/cross-env NODE_ENV=production ./node_modules/.bin/ts-node ./scripts/release/index.ts
 
       - name: Rename zips with sha for traceability
         id: rename

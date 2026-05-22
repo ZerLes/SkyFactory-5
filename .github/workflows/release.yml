@@ -3,16 +3,16 @@ name: release
 on:
   push:
     tags:
-      - 'v*.*.*'
+      - "v*.*.*"
   workflow_dispatch:
     inputs:
       ref:
-        description: 'Branch / tag / sha to release from'
+        description: "Branch / tag / sha to release from"
         required: true
-        default: 'develop'
+        default: "develop"
 
 permissions:
-  contents: write  # required to create a GitHub Release
+  contents: write # required to create a GitHub Release
 
 concurrency:
   group: release-${{ github.workflow }}-${{ github.ref }}
@@ -67,10 +67,13 @@ jobs:
       - name: Build production zips
         env:
           NODE_ENV: production
-          CI: 'true'
-          SF5_CI_SKIP_FORGE_DOWNLOAD: 'true'
+          CI: "true"
+          SF5_CI_SKIP_FORGE_DOWNLOAD: "true"
         run: |
-          npm run release
+          # See build.yml for the rationale on bypassing `npm run release` — the nested
+          # `npm install` in that script re-triggers the husky `prepare` hook with a
+          # stripped PATH and fails in CI. Deps are already installed via `npm ci`.
+          ./node_modules/.bin/cross-env NODE_ENV=production ./node_modules/.bin/ts-node ./scripts/release/index.ts
 
       - name: Stage release assets
         id: stage
