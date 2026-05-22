@@ -48,18 +48,18 @@ jobs:
           echo "short_sha=${SHORT_SHA}" >> "$GITHUB_OUTPUT"
           echo "Pack version: ${VERSION} @ ${SHORT_SHA}"
 
-      - name: Build release zips (dev mode — no Minecraft auth required)
+      - name: Build release zips (prod naming, no Minecraft auth)
         env:
-          NODE_ENV: development
+          NODE_ENV: production
           CI: 'true'
           SF5_CI_SKIP_FORGE_DOWNLOAD: 'true'
+        shell: bash
         run: |
-          # The release script's --dev path appends a date+random suffix; we don't want that in CI.
-          # Use prod naming via an env override, but skip Forge installer download (handled by SF5_CI_SKIP_FORGE_DOWNLOAD in scripts/release/index.ts).
-          NODE_ENV=production npm run release || {
-            echo "::warning::Release script failed under NODE_ENV=production. Falling back to dev mode."
-            npm run release:dev
-          }
+          set -euo pipefail
+          # SF5_CI_SKIP_FORGE_DOWNLOAD lets the release script skip the Mojang-auth
+          # Forge installer download (handled in scripts/release/index.ts). Hard-fail
+          # if the release script fails — no silent fallback to dev mode.
+          npm run release
 
       - name: Rename zips with sha for traceability
         id: rename
@@ -88,7 +88,7 @@ jobs:
         with:
           name: SkyFactory-5-client-v${{ steps.ver.outputs.version }}-${{ steps.ver.outputs.short_sha }}
           path: ./artifacts/SkyFactory-5-client-*.zip
-          if-no-files-found: warn
+          if-no-files-found: error
           retention-days: 14
 
       - name: Upload server artifact
@@ -96,5 +96,5 @@ jobs:
         with:
           name: SkyFactory-5-Server-v${{ steps.ver.outputs.version }}-${{ steps.ver.outputs.short_sha }}
           path: ./artifacts/SkyFactory-5-server-*.zip
-          if-no-files-found: warn
+          if-no-files-found: error
           retention-days: 14

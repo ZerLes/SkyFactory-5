@@ -1,37 +1,92 @@
 {
   "chapters": [
-    { "id": "getting_started", "title": "Getting Started",  "icon": "minecraft:grass_block",           "order": 1 },
-    { "id": "tech_basics",     "title": "Tech Basics",      "icon": "minecraft:redstone_torch",        "order": 2 },
-    { "id": "resources",       "title": "Resources",        "icon": "minecraft:apple",                 "order": 3 },
-    { "id": "storage",         "title": "Storage",          "icon": "minecraft:chest",                 "order": 4 },
-    { "id": "power",           "title": "Power",            "icon": "thermal:energy_cell",             "order": 5 },
-    { "id": "advanced_tech",   "title": "Advanced Tech",    "icon": "ae2:controller",                  "order": 6 },
-    { "id": "magic",           "title": "Magic",            "icon": "ars_nouveau:source_gem",          "order": 7 },
-    { "id": "exploration",     "title": "Exploration",      "icon": "minecraft:compass",               "order": 8 },
-    { "id": "miscellaneous",   "title": "Miscellaneous",    "icon": "minecraft:emerald",               "order": 9 },
-    { "id": "endgame",         "title": "Endgame",          "icon": "minecraft:dragon_head",           "order": 10 },
-    { "id": "faq",             "title": "FAQ",              "icon": "minecraft:writable_book",         "order": 11 }
+    {
+      "id": "getting_started",
+      "title": "Getting Started",
+      "icon": "minecraft:grass_block",
+      "order": 1
+    },
+    {
+      "id": "tech_basics",
+      "title": "Tech Basics",
+      "icon": "minecraft:redstone_torch",
+      "order": 2
+    },
+    {
+      "id": "resources",
+      "title": "Resources",
+      "icon": "minecraft:apple",
+      "order": 3
+    },
+    {
+      "id": "storage",
+      "title": "Storage",
+      "icon": "minecraft:chest",
+      "order": 4
+    },
+    {
+      "id": "power",
+      "title": "Power",
+      "icon": "thermal:energy_cell",
+      "order": 5
+    },
+    {
+      "id": "advanced_tech",
+      "title": "Advanced Tech",
+      "icon": "ae2:controller",
+      "order": 6
+    },
+    {
+      "id": "magic",
+      "title": "Magic",
+      "icon": "ars_nouveau:source_gem",
+      "order": 7
+    },
+    {
+      "id": "exploration",
+      "title": "Exploration",
+      "icon": "minecraft:compass",
+      "order": 8
+    },
+    {
+      "id": "miscellaneous",
+      "title": "Miscellaneous",
+      "icon": "minecraft:emerald",
+      "order": 9
+    },
+    {
+      "id": "endgame",
+      "title": "Endgame",
+      "icon": "minecraft:dragon_head",
+      "order": 10
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "icon": "minecraft:writable_book",
+      "order": 11
+    }
   ],
   "quest_icons_by_section": {
-    "discovery":   "minecraft:white_wool",
-    "stone":       "minecraft:cobblestone",
-    "chromatic":   "minecraft:cyan_dye",
-    "automation":  "thermal:dynamo_stirling",
-    "farming":     "mysticalagriculture:inferium_seeds",
-    "hoarding":    "sophisticatedstorage:chest",
-    "power":       "biggerreactors:reactor_casing",
-    "life":        "modular_golems:golem_core",
-    "simulation":  "industrialforegoing:mob_duplicator",
-    "magic":       "ars_nouveau:source_gem",
-    "normal_gw":   "gateways:gate_pearl",
-    "titan_gw":    "gateways:titan_pearl",
-    "challenge_gw":"gateways:challenge_pearl",
-    "travel":      "minecraft:ender_pearl",
-    "worlds":      "rftoolsdim:dimension_builder",
-    "misc":        "minecraft:emerald",
-    "craziness":   "minecraft:nether_star",
-    "legends":     "minecraft:netherite_ingot",
-    "dragons":     "minecraft:dragon_egg",
-    "crazy":       "minecraft:command_block"
+    "discovery": "minecraft:white_wool",
+    "stone": "minecraft:cobblestone",
+    "chromatic": "minecraft:cyan_dye",
+    "automation": "thermal:dynamo_stirling",
+    "farming": "mysticalagriculture:inferium_seeds",
+    "hoarding": "sophisticatedstorage:chest",
+    "power": "biggerreactors:reactor_casing",
+    "life": "modulargolems:metal_golem_body",
+    "simulation": "industrialforegoing:mob_duplicator",
+    "magic": "ars_nouveau:source_gem",
+    "normal_gw": "gateways:gate_pearl",
+    "titan_gw": "gateways:gate_pearl",
+    "challenge_gw": "gateways:gate_pearl",
+    "travel": "minecraft:ender_pearl",
+    "worlds": "rftoolsdim:dimension_builder",
+    "misc": "minecraft:emerald",
+    "craziness": "minecraft:nether_star",
+    "legends": "minecraft:netherite_ingot",
+    "dragons": "minecraft:dragon_egg",
+    "crazy": "minecraft:command_block"
   }
 }

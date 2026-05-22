@@ -4,7 +4,9 @@ on:
   pull_request:
     branches: [develop, main]
   push:
-    branches: [develop, main]
+    # Validate on direct pushes to develop only — main is merge-only.
+    # PR triggers above already cover feature branches.
+    branches: [develop]
 
 permissions:
   contents: read

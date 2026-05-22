@@ -13,13 +13,16 @@ Each ID is referenced from PLAN.md `<requirements>` blocks. `v1` = this PR/migra
 
 - **R-010** (v1): 11 FTB Quests chapter files (one per category) committed: Getting Started, Tech Basics, Resources, Storage, Power, Advanced Tech, Magic, Exploration, Miscellaneous, Endgame, FAQ.
 - **R-011** (v1): Chapter order on the sidebar matches the reference screenshot.
-- **R-012** (v1): All 178 quests from `tasks.txt` materialised as SNBT quest entries with dependency links reflecting progression (intra-age serial, inter-age via "gate" quests).
+- **R-012** (v1): All 178 quests from `tasks.txt` materialised as SNBT quest entries with **intra-section linear dependency links** (i-th quest depends on the (i-1)-th of the same section). Chapters are **independent of each other** — a new player can browse all chapters from start. Cross-chapter "gate" quests are intentionally deferred to v2 (see R-021).
 - **R-013** (v1): Each quest has an icon (mod-provided item id) and at least a 1-sentence description.
 - **R-014** (v1): First three ages (Discovery, Stone, Chromatic — 26 quests) ship with **full mini-wiki**: per-quest description containing step-by-step instructions, item references, and a "what unlocks next" closing line referencing the next quest's title.
 
 ## Quest content (full wiki — v2)
 
 - **R-020** (v2): The remaining 17 ages get full mini-wikis, shipped one PR per logical group (Tech/Resources/Storage in one PR, Power+Advanced Tech in another, Magic in its own PR because it has 54 quests with 4 sub-trees, etc.).
+- **R-021** (v2): Key progression quests upgrade from `type: "checkmark"` to `type: "item"` or `type: "advancement"` tasks so they auto-complete from gameplay events (first reactor build, first AE2 network, gateway completions, etc.).
+- **R-022** (v2): Add cross-chapter gating as an opt-in mode (first quest of each chapter depends on a specific completion in the prior chapter) for new-player guidance. Default stays "all chapters open".
+- **R-023** (v2): Migrate the 16 "Discover {Color}" entries into FTB Quests so the FTB book covers the full progression, not just the Checklist.
 
 ## Localization
 

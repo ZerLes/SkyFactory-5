@@ -54,8 +54,15 @@ jobs:
               exit 1
             fi
           fi
+          # Pre-release detection: any tag with a '-' suffix (v5.0.9-rc1, v5.0.9-beta, etc.) is a pre-release.
+          if [[ "${PACK_VERSION}" == *-* ]] || [[ "${TAG}" == *-* ]]; then
+            PRERELEASE="true"
+          else
+            PRERELEASE="false"
+          fi
           echo "version=${PACK_VERSION}" >> "$GITHUB_OUTPUT"
           echo "tag=v${PACK_VERSION}" >> "$GITHUB_OUTPUT"
+          echo "prerelease=${PRERELEASE}" >> "$GITHUB_OUTPUT"
 
       - name: Build production zips
         env:
@@ -107,13 +114,15 @@ jobs:
           cat release-notes.md
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
+        # Pinned to v2.0.6 (commit SHA) to mitigate supply-chain risk of floating tag.
+        # Bump intentionally via Dependabot or a manual PR.
+        uses: softprops/action-gh-release@a74c6b72af54cfa997e81df42d94703d6313a2d0
         with:
           tag_name: ${{ steps.ver.outputs.tag }}
           name: SkyFactory 5 ${{ steps.ver.outputs.tag }}
           body_path: release-notes.md
           draft: false
-          prerelease: false
+          prerelease: ${{ steps.ver.outputs.prerelease == 'true' }}
           fail_on_unmatched_files: true
           files: |
             release-assets/*.zip

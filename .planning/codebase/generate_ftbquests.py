@@ -20,10 +20,8 @@ Conventions:
 """
 import hashlib
 import json
-import os
 import sys
 from pathlib import Path
-from typing import Optional
 
 REPO = Path(__file__).resolve().parents[2]
 PLANNING = REPO / ".planning" / "codebase"
@@ -36,9 +34,37 @@ def slugify(s: str) -> str:
     return "".join(c.lower() if c.isalnum() else "_" for c in s).strip("_")
 
 
-def quest_id(age: str, idx: int, title: str) -> str:
-    raw = f"{age}:{idx}:{title}".encode("utf-8")
-    return hashlib.md5(raw).hexdigest()[:16].upper()
+REGISTRY_PATH = PLANNING / "quest_id_registry.json"
+
+
+def _load_registry() -> dict:
+    """Frozen mapping (age, index) -> 16-char hex quest id.
+
+    Once a quest is generated its id never changes — even if its title is edited.
+    This keeps dependency chains intact across content rewrites.
+    """
+    if REGISTRY_PATH.exists():
+        return json.loads(REGISTRY_PATH.read_text(encoding="utf-8"))
+    return {}
+
+
+def _save_registry(registry: dict) -> None:
+    REGISTRY_PATH.write_text(
+        json.dumps(registry, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+
+
+_REGISTRY = _load_registry()
+
+
+def quest_id(age: str, idx, title: str) -> str:
+    key = f"{age}::{idx}"
+    if key not in _REGISTRY:
+        # First time we see this (age, idx) — derive deterministically from age+idx+title and freeze.
+        raw = f"{age}:{idx}:{title}".encode("utf-8")
+        _REGISTRY[key] = hashlib.md5(raw).hexdigest()[:16].upper()
+    return _REGISTRY[key]
 
 
 def chapter_id_for_chapter(slug: str) -> str:
@@ -55,7 +81,7 @@ def snbt_string(s: str) -> str:
     return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
 
-def render_chapter(chapter_def, quests_in_chapter, sections_by_chapter):
+def render_chapter(chapter_def, quests_in_chapter):
     """Render one chapter SNBT file."""
     cid = chapter_id_for_chapter(chapter_def["id"])
     title_key = f"ftbquests.chapter.{chapter_def['id']}.title"
@@ -185,7 +211,7 @@ def main():
             ]
             (OUT_CHAPTERS / f"{chapter_def['id']}.snbt").write_text("\n".join(placeholder_lines) + "\n", encoding="utf-8")
         else:
-            (OUT_CHAPTERS / f"{chapter_def['id']}.snbt").write_text(render_chapter(chapter_def, quests, age_map), encoding="utf-8")
+            (OUT_CHAPTERS / f"{chapter_def['id']}.snbt").write_text(render_chapter(chapter_def, quests), encoding="utf-8")
 
     # FAQ chapter — synthetic content
     faq_lines = [
@@ -198,14 +224,19 @@ def main():
         "\tquests: [",
     ]
     faq_entries = [
-        ("how_to_use", "How to use this book", "minecraft:writable_book", 0, 0),
-        ("mob_spawning", "Mob spawning rules", "minecraft:zombie_head", 0, 1.5),
-        ("gateways_intro", "What are Gateways?", "gateways:gate_pearl", 0, 3.0),
-        ("colors", "Discovering colors", "minecraft:white_concrete_powder", 0, 4.5),
-        ("checklist_parallel", "Why is there still a Checklist book?", "minecraft:lectern", 0, 6.0),
+        ("how_to_use", "How to use this book", "minecraft:writable_book", 0.0, 0.0),
+        ("mob_spawning", "Mob spawning rules", "minecraft:zombie_head", 0.0, 1.5),
+        ("gateways_intro", "What are Gateways?", "gateways:gate_pearl", 0.0, 3.0),
+        ("colors", "Discovering colors", "minecraft:white_concrete_powder", 0.0, 4.5),
+        ("checklist_parallel", "Why is there still a Checklist book?", "minecraft:lectern", 0.0, 6.0),
     ]
-    for slug, _, icon, x, y in faq_entries:
-        qid = quest_id("FAQ", abs(hash(slug)) % 10000, slug).upper()
+    # Add the chapter-level fields for visual consistency with other chapters
+    faq_lines.insert(6, "\tdefault_quest_shape: \"\"")
+    faq_lines.insert(7, "\tdefault_hide_dependency_lines: false")
+    faq_lines.insert(8, "\tgroup: \"\"")
+    for idx, (slug, _title, icon, x, y) in enumerate(faq_entries, start=1):
+        # Deterministic id derived from the slug + a stable counter — no Python hash() randomness
+        qid = quest_id("FAQ", f"{idx:02d}-{slug}", slug)
         faq_lines.append("\t\t{")
         faq_lines.append(f"\t\t\tx: {x}d")
         faq_lines.append(f"\t\t\ty: {y}d")
@@ -213,7 +244,7 @@ def main():
         faq_lines.append(f"\t\t\ticon: \"{icon}\"")
         faq_lines.append(f"\t\t\tid: \"{qid}\"")
         faq_lines.append("\t\t\ttasks: [{")
-        task_id = quest_id("FAQ::task", abs(hash(slug)) % 10000, slug).upper()
+        task_id = quest_id("FAQ::task", f"{idx:02d}-{slug}", slug)
         faq_lines.append(f"\t\t\t\tid: \"{task_id}\"")
         faq_lines.append("\t\t\t\ttype: \"checkmark\"")
         faq_lines.append("\t\t\t}]")
@@ -224,11 +255,26 @@ def main():
     faq_lines.extend(["\t]", "}"])
     (OUT_CHAPTERS / "faq.snbt").write_text("\n".join(faq_lines) + "\n", encoding="utf-8")
 
-    # Build i18n stub
-    en, ru = {}, {}
+    # Build i18n: load existing lang files (so hand-written wiki descriptions survive a re-run)
+    # and only fill in keys that are missing.
+    def _load_existing(path: Path) -> dict:
+        if path.exists():
+            return json.loads(path.read_text(encoding="utf-8"))
+        return {}
+
+    en = _load_existing(OUT_LANG / "en_us.json")
+    ru = _load_existing(OUT_LANG / "ru_ru.json")
+
+    def en_set(key: str, value: str) -> None:
+        """Only set if the key is missing — never overwrite human-curated translations."""
+        en.setdefault(key, value)
+
+    def ru_set(key: str, value: str) -> None:
+        ru.setdefault(key, value)
+
     for chapter_def in chapters:
-        en[f"ftbquests.chapter.{chapter_def['id']}.title"] = chapter_def["title"]
-        ru[f"ftbquests.chapter.{chapter_def['id']}.title"] = {
+        en_set(f"ftbquests.chapter.{chapter_def['id']}.title", chapter_def["title"])
+        ru_set(f"ftbquests.chapter.{chapter_def['id']}.title", {
             "getting_started": "Начало пути",
             "tech_basics":     "Основы техники",
             "resources":       "Ресурсы",
@@ -240,15 +286,15 @@ def main():
             "miscellaneous":   "Разное",
             "endgame":         "Финал",
             "faq":             "Справка",
-        }[chapter_def["id"]]
+        }[chapter_def["id"]])
 
-    # Quest titles & placeholder descs for all 178 quests
+    # Quest titles & placeholder descs for all 178 quests — only set missing keys
     for q in inventory["quests"]:
         qid = quest_id(q["age"], q["index_in_age"], q["title"]).lower()
-        en[f"ftbquests.quest.{qid}.title"] = q["title"]
-        en[f"ftbquests.quest.{qid}.desc"] = q["title"] + "."
-        ru[f"ftbquests.quest.{qid}.title"] = q["title"]  # placeholder, full RU in wiki phase
-        ru[f"ftbquests.quest.{qid}.desc"] = q["title"] + "."
+        en_set(f"ftbquests.quest.{qid}.title", q["title"])
+        en_set(f"ftbquests.quest.{qid}.desc", q["title"] + ".")
+        ru_set(f"ftbquests.quest.{qid}.title", q["title"])  # placeholder, full RU in wiki phase
+        ru_set(f"ftbquests.quest.{qid}.desc", q["title"] + ".")
 
     # FAQ keys
     faq_titles_en = {
@@ -265,17 +311,26 @@ def main():
         "colors":             ("Открытие цветов", "Игра начинается в чёрно-белом мире. Каждый из 16 цветов нужно §eоткрыть§r через определённый рецепт или действие (бросить краситель в воду, покрасить саженец, обжечь и т. д.). Открытие цвета возвращает миру цвет и открывает рецепты с этим цветом."),
         "checklist_parallel": ("Зачем две системы квестов?", "Книга §aChecklist§r оставлена для быстрого \"todo-листа\". §6FTB Quests§r — основная система прогрессии с деревом, иконками и пошаговыми гайдами. Используй любую — обе необязательны, и выполнение в одной не отмечает квест в другой."),
     }
+    # Resolve slug -> idx so lang-file keys line up with chapter SNBT IDs
+    faq_slug_to_idx = {slug: idx for idx, (slug, _title, _icon, _x, _y) in enumerate(faq_entries, start=1)}
+    # FAQ entries: these ARE hand-authored seed text, but only set if missing so a future
+    # edit to en_us.json wins over the inlined seed.
     for slug, (t, d) in faq_titles_en.items():
-        qid = quest_id("FAQ", abs(hash(slug)) % 10000, slug).lower()
-        en[f"ftbquests.quest.{qid}.title"] = t
-        en[f"ftbquests.quest.{qid}.desc"] = d
+        idx = faq_slug_to_idx[slug]
+        qid = quest_id("FAQ", f"{idx:02d}-{slug}", slug).lower()
+        en_set(f"ftbquests.quest.{qid}.title", t)
+        en_set(f"ftbquests.quest.{qid}.desc", d)
     for slug, (t, d) in faq_titles_ru.items():
-        qid = quest_id("FAQ", abs(hash(slug)) % 10000, slug).lower()
-        ru[f"ftbquests.quest.{qid}.title"] = t
-        ru[f"ftbquests.quest.{qid}.desc"] = d
+        idx = faq_slug_to_idx[slug]
+        qid = quest_id("FAQ", f"{idx:02d}-{slug}", slug).lower()
+        ru_set(f"ftbquests.quest.{qid}.title", t)
+        ru_set(f"ftbquests.quest.{qid}.desc", d)
 
-    (OUT_LANG / "en_us.json").write_text(json.dumps(en, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    (OUT_LANG / "ru_ru.json").write_text(json.dumps(ru, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (OUT_LANG / "en_us.json").write_text(json.dumps(en, indent=2, ensure_ascii=False, sort_keys=True) + "\n", encoding="utf-8")
+    (OUT_LANG / "ru_ru.json").write_text(json.dumps(ru, indent=2, ensure_ascii=False, sort_keys=True) + "\n", encoding="utf-8")
+
+    # Persist the (now possibly-expanded) registry so future runs are reproducible.
+    _save_registry(_REGISTRY)
 
     # Summary
     print(f"Generated {len(chapters)} chapters, {sum(len(v) for v in decorated_by_chapter.values())} quests + {len(faq_entries)} FAQ entries")

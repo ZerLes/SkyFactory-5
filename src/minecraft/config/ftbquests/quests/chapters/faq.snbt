@@ -4,10 +4,13 @@
 	title: "{ftbquests.chapter.faq.title}"
 	icon: "minecraft:writable_book"
 	order_index: 10
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	group: ""
 	quests: [
 		{
-			x: 0d
-			y: 0d
+			x: 0.0d
+			y: 0.0d
 			title: "{ftbquests.quest.9a7528e69f896daa.title}"
 			icon: "minecraft:writable_book"
 			id: "9A7528E69F896DAA"
@@ -20,7 +23,7 @@
 			]
 		}
 		{
-			x: 0d
+			x: 0.0d
 			y: 1.5d
 			title: "{ftbquests.quest.75fc8fe1c5254346.title}"
 			icon: "minecraft:zombie_head"
@@ -34,7 +37,7 @@
 			]
 		}
 		{
-			x: 0d
+			x: 0.0d
 			y: 3.0d
 			title: "{ftbquests.quest.2fd9878762d44a73.title}"
 			icon: "gateways:gate_pearl"
@@ -48,7 +51,7 @@
 			]
 		}
 		{
-			x: 0d
+			x: 0.0d
 			y: 4.5d
 			title: "{ftbquests.quest.5a0a12b4ec0cf0ce.title}"
 			icon: "minecraft:white_concrete_powder"
@@ -62,7 +65,7 @@
 			]
 		}
 		{
-			x: 0d
+			x: 0.0d
 			y: 6.0d
 			title: "{ftbquests.quest.8c47347728afc347.title}"
 			icon: "minecraft:lectern"

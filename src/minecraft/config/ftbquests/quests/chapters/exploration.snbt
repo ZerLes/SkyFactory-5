@@ -91,7 +91,7 @@
 			x: 4.0d
 			y: 1.0d
 			title: "{ftbquests.quest.47ac82eca673555d.title}"
-			icon: "gateways:titan_pearl"
+			icon: "gateways:gate_pearl"
 			id: "47AC82ECA673555D"
 			tasks: [{
 				id: "B3A584354E77DF3B"
@@ -106,7 +106,7 @@
 			x: 4.0d
 			y: 2.5d
 			title: "{ftbquests.quest.7cbee834379a9904.title}"
-			icon: "gateways:titan_pearl"
+			icon: "gateways:gate_pearl"
 			id: "7CBEE834379A9904"
 			tasks: [{
 				id: "BA62401DA460ABE3"
@@ -122,7 +122,7 @@
 			x: 4.0d
 			y: 4.0d
 			title: "{ftbquests.quest.fc66c8b41b8fb7d8.title}"
-			icon: "gateways:titan_pearl"
+			icon: "gateways:gate_pearl"
 			id: "FC66C8B41B8FB7D8"
 			tasks: [{
 				id: "F3BAC4561147AF2A"
@@ -138,7 +138,7 @@
 			x: 4.0d
 			y: 5.5d
 			title: "{ftbquests.quest.b5a701d5f0f579f7.title}"
-			icon: "gateways:titan_pearl"
+			icon: "gateways:gate_pearl"
 			id: "B5A701D5F0F579F7"
 			tasks: [{
 				id: "201380084200445D"
@@ -154,7 +154,7 @@
 			x: 8.0d
 			y: 1.0d
 			title: "{ftbquests.quest.f93eee1c285c9f91.title}"
-			icon: "gateways:challenge_pearl"
+			icon: "gateways:gate_pearl"
 			id: "F93EEE1C285C9F91"
 			tasks: [{
 				id: "D919F78D1B2DA19C"

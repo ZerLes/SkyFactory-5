@@ -12,7 +12,7 @@
 			x: 0.0d
 			y: 1.0d
 			title: "{ftbquests.quest.a4e1796eac2bb778.title}"
-			icon: "modular_golems:golem_core"
+			icon: "modulargolems:metal_golem_body"
 			id: "A4E1796EAC2BB778"
 			tasks: [{
 				id: "6AA2D61FFC7DB7E6"
@@ -27,7 +27,7 @@
 			x: 0.0d
 			y: 2.5d
 			title: "{ftbquests.quest.c5879f16f61babed.title}"
-			icon: "modular_golems:golem_core"
+			icon: "modulargolems:metal_golem_body"
 			id: "C5879F16F61BABED"
 			tasks: [{
 				id: "EB14EDDD2CFCEF91"
@@ -43,7 +43,7 @@
 			x: 0.0d
 			y: 4.0d
 			title: "{ftbquests.quest.b4a6c607f8a461dd.title}"
-			icon: "modular_golems:golem_core"
+			icon: "modulargolems:metal_golem_body"
 			id: "B4A6C607F8A461DD"
 			tasks: [{
 				id: "FAFA6FB15F542F58"
@@ -59,7 +59,7 @@
 			x: 0.0d
 			y: 5.5d
 			title: "{ftbquests.quest.1ab6fc7f91065b89.title}"
-			icon: "modular_golems:golem_core"
+			icon: "modulargolems:metal_golem_body"
 			id: "1AB6FC7F91065B89"
 			tasks: [{
 				id: "8601804E6B4B7EFF"
@@ -75,7 +75,7 @@
 			x: 0.0d
 			y: 7.0d
 			title: "{ftbquests.quest.851862cc40413b66.title}"
-			icon: "modular_golems:golem_core"
+			icon: "modulargolems:metal_golem_body"
 			id: "851862CC40413B66"
 			tasks: [{
 				id: "010FC4F09FB7087D"
@@ -91,7 +91,7 @@
 			x: 0.0d
 			y: 8.5d
 			title: "{ftbquests.quest.fa4a4bb8b8eac87b.title}"
-			icon: "modular_golems:golem_core"
+			icon: "modulargolems:metal_golem_body"
 			id: "FA4A4BB8B8EAC87B"
 			tasks: [{
 				id: "85F9E62A4C5CD5C4"
@@ -107,7 +107,7 @@
 			x: 0.0d
 			y: 10.0d
 			title: "{ftbquests.quest.a1eb264a41ac265b.title}"
-			icon: "modular_golems:golem_core"
+			icon: "modulargolems:metal_golem_body"
 			id: "A1EB264A41AC265B"
 			tasks: [{
 				id: "BCAD05080576F634"
@@ -123,7 +123,7 @@
 			x: 0.0d
 			y: 11.5d
 			title: "{ftbquests.quest.1586f4d38a66e5ee.title}"
-			icon: "modular_golems:golem_core"
+			icon: "modulargolems:metal_golem_body"
 			id: "1586F4D38A66E5EE"
 			tasks: [{
 				id: "8D61A610F9A68010"
@@ -139,7 +139,7 @@
 			x: 0.0d
 			y: 13.0d
 			title: "{ftbquests.quest.a414909ef47b0bfc.title}"
-			icon: "modular_golems:golem_core"
+			icon: "modulargolems:metal_golem_body"
 			id: "A414909EF47B0BFC"
 			tasks: [{
 				id: "A73F11B00A2D5457"
@@ -155,7 +155,7 @@
 			x: 0.0d
 			y: 14.5d
 			title: "{ftbquests.quest.45f4707d59c72c70.title}"
-			icon: "modular_golems:golem_core"
+			icon: "modulargolems:metal_golem_body"
 			id: "45F4707D59C72C70"
 			tasks: [{
 				id: "E45E70FCDA7ED617"

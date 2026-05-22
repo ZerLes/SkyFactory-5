@@ -49,8 +49,11 @@ async function main() {
   // In CI we can't authenticate against Mojang to download the Forge installer.
   // Set SF5_CI_SKIP_FORGE_DOWNLOAD=true to build the server zip without the installer;
   // a SERVER_README.txt is added telling the operator which Forge build to fetch.
-  const skipForgeDownload =
-    process.env.SF5_CI_SKIP_FORGE_DOWNLOAD === "true";
+  // Accept any common truthy spelling so developers running the build locally
+  // can use 1 / TRUE / True / yes interchangeably.
+  const skipForgeDownload = /^(1|true|yes|on)$/i.test(
+    process.env.SF5_CI_SKIP_FORGE_DOWNLOAD ?? "",
+  );
 
   const additionalServerPaths: {
     isFile?: boolean;
@@ -75,10 +78,11 @@ async function main() {
       zipFilePath: (filePath) => path.basename(filePath),
     });
   } else {
-    const mcPkg = await readMinecraftPackage();
+    // mc-package.json is statically imported at the top of the file; reuse it
+    // instead of re-reading from disk.
     const readmePath = path.join(releaseDirPath, "SERVER_README.txt");
-    const installerName = `forge-${mcPkg.minecraftVersion}-${mcPkg.forgeVersion}-installer.jar`;
-    const installerUrl = `https://maven.minecraftforge.net/net/minecraftforge/forge/${mcPkg.minecraftVersion}-${mcPkg.forgeVersion}/${installerName}`;
+    const installerName = `forge-${mcPackage.minecraftVersion}-${mcPackage.forgeVersion}-installer.jar`;
+    const installerUrl = `https://maven.minecraftforge.net/net/minecraftforge/forge/${mcPackage.minecraftVersion}-${mcPackage.forgeVersion}/${installerName}`;
     fs.writeFileSync(
       readmePath,
       [
