@@ -158,3 +158,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# GSD-flow ephemeral artifacts
+.planning/ui-reviews/
