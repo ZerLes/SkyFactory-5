@@ -1,0 +1,100 @@
+name: build
+
+on:
+  push:
+    branches:
+      - develop
+      - 'feat/**'
+      - 'fix/**'
+      - 'chore/**'
+  pull_request:
+    branches: [develop, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  package:
+    name: Package client + server zips
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install deps
+        run: npm ci --no-audit --no-fund --prefer-offline
+
+      - name: Read pack version
+        id: ver
+        shell: bash
+        run: |
+          VERSION="$(node -p "require('./mc-package.json').version")"
+          SHORT_SHA="${GITHUB_SHA::7}"
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "short_sha=${SHORT_SHA}" >> "$GITHUB_OUTPUT"
+          echo "Pack version: ${VERSION} @ ${SHORT_SHA}"
+
+      - name: Build release zips (dev mode — no Minecraft auth required)
+        env:
+          NODE_ENV: development
+          CI: 'true'
+          SF5_CI_SKIP_FORGE_DOWNLOAD: 'true'
+        run: |
+          # The release script's --dev path appends a date+random suffix; we don't want that in CI.
+          # Use prod naming via an env override, but skip Forge installer download (handled by SF5_CI_SKIP_FORGE_DOWNLOAD in scripts/release/index.ts).
+          NODE_ENV=production npm run release || {
+            echo "::warning::Release script failed under NODE_ENV=production. Falling back to dev mode."
+            npm run release:dev
+          }
+
+      - name: Rename zips with sha for traceability
+        id: rename
+        shell: bash
+        run: |
+          set -euxo pipefail
+          mkdir -p ./artifacts
+          VERSION="${{ steps.ver.outputs.version }}"
+          SHORT_SHA="${{ steps.ver.outputs.short_sha }}"
+          # Find the produced files (the script names them "SkyFactory 5 v{ver}.zip" or with a date+hex suffix in dev mode)
+          shopt -s nullglob
+          for f in .releases/*.zip; do
+            base="$(basename "$f")"
+            case "$base" in
+              *Server*) kind="server" ;;
+              *)        kind="client" ;;
+            esac
+            target="SkyFactory-5-${kind}-v${VERSION}-${SHORT_SHA}.zip"
+            cp "$f" "./artifacts/${target}"
+            echo "Renamed: $base -> $target"
+          done
+          ls -la ./artifacts
+
+      - name: Upload client artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: SkyFactory-5-client-v${{ steps.ver.outputs.version }}-${{ steps.ver.outputs.short_sha }}
+          path: ./artifacts/SkyFactory-5-client-*.zip
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Upload server artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: SkyFactory-5-Server-v${{ steps.ver.outputs.version }}-${{ steps.ver.outputs.short_sha }}
+          path: ./artifacts/SkyFactory-5-server-*.zip
+          if-no-files-found: warn
+          retention-days: 14

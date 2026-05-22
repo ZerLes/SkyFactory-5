@@ -1,0 +1,64 @@
+name: validate
+
+on:
+  pull_request:
+    branches: [develop, main]
+  push:
+    branches: [develop, main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: Lint + format check
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install deps
+        run: npm ci --no-audit --no-fund --prefer-offline
+
+      - name: Lint (prettier + eslint via jest)
+        run: npm run lint:direct
+
+      - name: Validate FTB Quests SNBT + i18n JSON shape
+        shell: bash
+        run: |
+          set -euxo pipefail
+
+          # 1. Every chapter file must exist
+          for ch in getting_started tech_basics resources storage power advanced_tech magic exploration miscellaneous endgame faq; do
+            test -f "src/minecraft/config/ftbquests/quests/chapters/${ch}.snbt"
+          done
+
+          # 2. JSON i18n files must parse
+          python3 -c "import json; json.load(open('src/minecraft/kubejs/assets/ftbquests/lang/en_us.json'))"
+          python3 -c "import json; json.load(open('src/minecraft/kubejs/assets/ftbquests/lang/ru_ru.json'))"
+
+          # 3. EN + RU must have the same keyset (no missing translations)
+          python3 - <<'PY'
+          import json, sys
+          en = set(json.load(open('src/minecraft/kubejs/assets/ftbquests/lang/en_us.json')))
+          ru = set(json.load(open('src/minecraft/kubejs/assets/ftbquests/lang/ru_ru.json')))
+          missing_in_ru = en - ru
+          missing_in_en = ru - en
+          if missing_in_ru or missing_in_en:
+              print(f"i18n key mismatch — missing in ru: {sorted(missing_in_ru)[:10]}; missing in en: {sorted(missing_in_en)[:10]}", file=sys.stderr)
+              sys.exit(1)
+          print(f"i18n OK: {len(en)} keys in both en_us and ru_ru")
+          PY
