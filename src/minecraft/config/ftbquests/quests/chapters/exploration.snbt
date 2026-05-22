@@ -1,0 +1,344 @@
+{
+	id: "A3D3ED48064CB97F"
+	filename: "exploration"
+	title: "{ftbquests.chapter.exploration.title}"
+	icon: "minecraft:compass"
+	order_index: 7
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	group: ""
+	quests: [
+		{
+			x: 0.0d
+			y: 1.0d
+			title: "{ftbquests.quest.e5b536ef7c829ff7.title}"
+			icon: "gateways:gate_pearl"
+			id: "E5B536EF7C829FF7"
+			tasks: [{
+				id: "59477B5B67709032"
+				type: "checkmark"
+				title: "{ftbquests.quest.e5b536ef7c829ff7.title}"
+			}]
+			description: [
+				"{ftbquests.quest.e5b536ef7c829ff7.desc}"
+			]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			title: "{ftbquests.quest.1649a95687d3cefd.title}"
+			icon: "gateways:gate_pearl"
+			id: "1649A95687D3CEFD"
+			tasks: [{
+				id: "877D60980505DD50"
+				type: "checkmark"
+				title: "{ftbquests.quest.1649a95687d3cefd.title}"
+			}]
+			description: [
+				"{ftbquests.quest.1649a95687d3cefd.desc}"
+			]
+			dependencies: ["E5B536EF7C829FF7"]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			title: "{ftbquests.quest.7750ade6af24af98.title}"
+			icon: "gateways:gate_pearl"
+			id: "7750ADE6AF24AF98"
+			tasks: [{
+				id: "694C9E4155728F7A"
+				type: "checkmark"
+				title: "{ftbquests.quest.7750ade6af24af98.title}"
+			}]
+			description: [
+				"{ftbquests.quest.7750ade6af24af98.desc}"
+			]
+			dependencies: ["1649A95687D3CEFD"]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			title: "{ftbquests.quest.528d4ae5b0eaa95d.title}"
+			icon: "gateways:gate_pearl"
+			id: "528D4AE5B0EAA95D"
+			tasks: [{
+				id: "31B60ED076748C91"
+				type: "checkmark"
+				title: "{ftbquests.quest.528d4ae5b0eaa95d.title}"
+			}]
+			description: [
+				"{ftbquests.quest.528d4ae5b0eaa95d.desc}"
+			]
+			dependencies: ["7750ADE6AF24AF98"]
+		}
+		{
+			x: 0.0d
+			y: 7.0d
+			title: "{ftbquests.quest.828bb423a8979721.title}"
+			icon: "gateways:gate_pearl"
+			id: "828BB423A8979721"
+			tasks: [{
+				id: "7029054432EC0E5C"
+				type: "checkmark"
+				title: "{ftbquests.quest.828bb423a8979721.title}"
+			}]
+			description: [
+				"{ftbquests.quest.828bb423a8979721.desc}"
+			]
+			dependencies: ["528D4AE5B0EAA95D"]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			title: "{ftbquests.quest.47ac82eca673555d.title}"
+			icon: "gateways:titan_pearl"
+			id: "47AC82ECA673555D"
+			tasks: [{
+				id: "B3A584354E77DF3B"
+				type: "checkmark"
+				title: "{ftbquests.quest.47ac82eca673555d.title}"
+			}]
+			description: [
+				"{ftbquests.quest.47ac82eca673555d.desc}"
+			]
+		}
+		{
+			x: 4.0d
+			y: 2.5d
+			title: "{ftbquests.quest.7cbee834379a9904.title}"
+			icon: "gateways:titan_pearl"
+			id: "7CBEE834379A9904"
+			tasks: [{
+				id: "BA62401DA460ABE3"
+				type: "checkmark"
+				title: "{ftbquests.quest.7cbee834379a9904.title}"
+			}]
+			description: [
+				"{ftbquests.quest.7cbee834379a9904.desc}"
+			]
+			dependencies: ["47AC82ECA673555D"]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			title: "{ftbquests.quest.fc66c8b41b8fb7d8.title}"
+			icon: "gateways:titan_pearl"
+			id: "FC66C8B41B8FB7D8"
+			tasks: [{
+				id: "F3BAC4561147AF2A"
+				type: "checkmark"
+				title: "{ftbquests.quest.fc66c8b41b8fb7d8.title}"
+			}]
+			description: [
+				"{ftbquests.quest.fc66c8b41b8fb7d8.desc}"
+			]
+			dependencies: ["7CBEE834379A9904"]
+		}
+		{
+			x: 4.0d
+			y: 5.5d
+			title: "{ftbquests.quest.b5a701d5f0f579f7.title}"
+			icon: "gateways:titan_pearl"
+			id: "B5A701D5F0F579F7"
+			tasks: [{
+				id: "201380084200445D"
+				type: "checkmark"
+				title: "{ftbquests.quest.b5a701d5f0f579f7.title}"
+			}]
+			description: [
+				"{ftbquests.quest.b5a701d5f0f579f7.desc}"
+			]
+			dependencies: ["FC66C8B41B8FB7D8"]
+		}
+		{
+			x: 8.0d
+			y: 1.0d
+			title: "{ftbquests.quest.f93eee1c285c9f91.title}"
+			icon: "gateways:challenge_pearl"
+			id: "F93EEE1C285C9F91"
+			tasks: [{
+				id: "D919F78D1B2DA19C"
+				type: "checkmark"
+				title: "{ftbquests.quest.f93eee1c285c9f91.title}"
+			}]
+			description: [
+				"{ftbquests.quest.f93eee1c285c9f91.desc}"
+			]
+		}
+		{
+			x: 12.0d
+			y: 1.0d
+			title: "{ftbquests.quest.b32e19112557a23a.title}"
+			icon: "minecraft:ender_pearl"
+			id: "B32E19112557A23A"
+			tasks: [{
+				id: "6CA1CE68D64F1943"
+				type: "checkmark"
+				title: "{ftbquests.quest.b32e19112557a23a.title}"
+			}]
+			description: [
+				"{ftbquests.quest.b32e19112557a23a.desc}"
+			]
+		}
+		{
+			x: 12.0d
+			y: 2.5d
+			title: "{ftbquests.quest.67da3516a87be335.title}"
+			icon: "minecraft:ender_pearl"
+			id: "67DA3516A87BE335"
+			tasks: [{
+				id: "C5E5ADE8675A9893"
+				type: "checkmark"
+				title: "{ftbquests.quest.67da3516a87be335.title}"
+			}]
+			description: [
+				"{ftbquests.quest.67da3516a87be335.desc}"
+			]
+			dependencies: ["B32E19112557A23A"]
+		}
+		{
+			x: 12.0d
+			y: 4.0d
+			title: "{ftbquests.quest.3c79e75e1e1751e5.title}"
+			icon: "minecraft:ender_pearl"
+			id: "3C79E75E1E1751E5"
+			tasks: [{
+				id: "68AD8B660BA974E1"
+				type: "checkmark"
+				title: "{ftbquests.quest.3c79e75e1e1751e5.title}"
+			}]
+			description: [
+				"{ftbquests.quest.3c79e75e1e1751e5.desc}"
+			]
+			dependencies: ["67DA3516A87BE335"]
+		}
+		{
+			x: 12.0d
+			y: 5.5d
+			title: "{ftbquests.quest.c6eb9f43f0b959fb.title}"
+			icon: "minecraft:ender_pearl"
+			id: "C6EB9F43F0B959FB"
+			tasks: [{
+				id: "D71F70A9A65C86A1"
+				type: "checkmark"
+				title: "{ftbquests.quest.c6eb9f43f0b959fb.title}"
+			}]
+			description: [
+				"{ftbquests.quest.c6eb9f43f0b959fb.desc}"
+			]
+			dependencies: ["3C79E75E1E1751E5"]
+		}
+		{
+			x: 12.0d
+			y: 7.0d
+			title: "{ftbquests.quest.c89d677e0da2bf2c.title}"
+			icon: "minecraft:ender_pearl"
+			id: "C89D677E0DA2BF2C"
+			tasks: [{
+				id: "3DECADE99908F56E"
+				type: "checkmark"
+				title: "{ftbquests.quest.c89d677e0da2bf2c.title}"
+			}]
+			description: [
+				"{ftbquests.quest.c89d677e0da2bf2c.desc}"
+			]
+			dependencies: ["C6EB9F43F0B959FB"]
+		}
+		{
+			x: 16.0d
+			y: 1.0d
+			title: "{ftbquests.quest.99db83136e36a3fa.title}"
+			icon: "rftoolsdim:dimension_builder"
+			id: "99DB83136E36A3FA"
+			tasks: [{
+				id: "7F6466927C20D2B9"
+				type: "checkmark"
+				title: "{ftbquests.quest.99db83136e36a3fa.title}"
+			}]
+			description: [
+				"{ftbquests.quest.99db83136e36a3fa.desc}"
+			]
+		}
+		{
+			x: 16.0d
+			y: 2.5d
+			title: "{ftbquests.quest.6e35c4bde5cc0c6f.title}"
+			icon: "rftoolsdim:dimension_builder"
+			id: "6E35C4BDE5CC0C6F"
+			tasks: [{
+				id: "47CD60DF50005E96"
+				type: "checkmark"
+				title: "{ftbquests.quest.6e35c4bde5cc0c6f.title}"
+			}]
+			description: [
+				"{ftbquests.quest.6e35c4bde5cc0c6f.desc}"
+			]
+			dependencies: ["99DB83136E36A3FA"]
+		}
+		{
+			x: 16.0d
+			y: 4.0d
+			title: "{ftbquests.quest.377243518cd84f99.title}"
+			icon: "rftoolsdim:dimension_builder"
+			id: "377243518CD84F99"
+			tasks: [{
+				id: "FE6E85B54E8605F1"
+				type: "checkmark"
+				title: "{ftbquests.quest.377243518cd84f99.title}"
+			}]
+			description: [
+				"{ftbquests.quest.377243518cd84f99.desc}"
+			]
+			dependencies: ["6E35C4BDE5CC0C6F"]
+		}
+		{
+			x: 16.0d
+			y: 5.5d
+			title: "{ftbquests.quest.26870d238e087309.title}"
+			icon: "rftoolsdim:dimension_builder"
+			id: "26870D238E087309"
+			tasks: [{
+				id: "D1BC8ECC999904CA"
+				type: "checkmark"
+				title: "{ftbquests.quest.26870d238e087309.title}"
+			}]
+			description: [
+				"{ftbquests.quest.26870d238e087309.desc}"
+			]
+			dependencies: ["377243518CD84F99"]
+		}
+		{
+			x: 16.0d
+			y: 7.0d
+			title: "{ftbquests.quest.bb8eab8171b5a48c.title}"
+			icon: "rftoolsdim:dimension_builder"
+			id: "BB8EAB8171B5A48C"
+			tasks: [{
+				id: "6128205512659E7A"
+				type: "checkmark"
+				title: "{ftbquests.quest.bb8eab8171b5a48c.title}"
+			}]
+			description: [
+				"{ftbquests.quest.bb8eab8171b5a48c.desc}"
+			]
+			dependencies: ["26870D238E087309"]
+		}
+		{
+			x: 16.0d
+			y: 8.5d
+			title: "{ftbquests.quest.6679c41ddacb515d.title}"
+			icon: "rftoolsdim:dimension_builder"
+			id: "6679C41DDACB515D"
+			tasks: [{
+				id: "D48E666238EBF8A9"
+				type: "checkmark"
+				title: "{ftbquests.quest.6679c41ddacb515d.title}"
+			}]
+			description: [
+				"{ftbquests.quest.6679c41ddacb515d.desc}"
+			]
+			dependencies: ["BB8EAB8171B5A48C"]
+		}
+	]
+	quest_links: [ ]
+}

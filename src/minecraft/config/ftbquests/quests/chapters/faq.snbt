@@ -1,0 +1,79 @@
+{
+	id: "E877B89BC5EFFB89"
+	filename: "faq"
+	title: "{ftbquests.chapter.faq.title}"
+	icon: "minecraft:writable_book"
+	order_index: 10
+	quests: [
+		{
+			x: 0d
+			y: 0d
+			title: "{ftbquests.quest.9a7528e69f896daa.title}"
+			icon: "minecraft:writable_book"
+			id: "9A7528E69F896DAA"
+			tasks: [{
+				id: "DDB52B6B00F82379"
+				type: "checkmark"
+			}]
+			description: [
+				"{ftbquests.quest.9a7528e69f896daa.desc}"
+			]
+		}
+		{
+			x: 0d
+			y: 1.5d
+			title: "{ftbquests.quest.75fc8fe1c5254346.title}"
+			icon: "minecraft:zombie_head"
+			id: "75FC8FE1C5254346"
+			tasks: [{
+				id: "3A87093E1208414E"
+				type: "checkmark"
+			}]
+			description: [
+				"{ftbquests.quest.75fc8fe1c5254346.desc}"
+			]
+		}
+		{
+			x: 0d
+			y: 3.0d
+			title: "{ftbquests.quest.2fd9878762d44a73.title}"
+			icon: "gateways:gate_pearl"
+			id: "2FD9878762D44A73"
+			tasks: [{
+				id: "7158D03341C22BD0"
+				type: "checkmark"
+			}]
+			description: [
+				"{ftbquests.quest.2fd9878762d44a73.desc}"
+			]
+		}
+		{
+			x: 0d
+			y: 4.5d
+			title: "{ftbquests.quest.5a0a12b4ec0cf0ce.title}"
+			icon: "minecraft:white_concrete_powder"
+			id: "5A0A12B4EC0CF0CE"
+			tasks: [{
+				id: "53DB2B8464A117E9"
+				type: "checkmark"
+			}]
+			description: [
+				"{ftbquests.quest.5a0a12b4ec0cf0ce.desc}"
+			]
+		}
+		{
+			x: 0d
+			y: 6.0d
+			title: "{ftbquests.quest.8c47347728afc347.title}"
+			icon: "minecraft:lectern"
+			id: "8C47347728AFC347"
+			tasks: [{
+				id: "FD2828F85E7B48FF"
+				type: "checkmark"
+			}]
+			description: [
+				"{ftbquests.quest.8c47347728afc347.desc}"
+			]
+		}
+	]
+}

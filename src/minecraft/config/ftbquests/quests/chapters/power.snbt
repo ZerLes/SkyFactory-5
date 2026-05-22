@@ -1,0 +1,188 @@
+{
+	id: "CD28272155FF9CCE"
+	filename: "power"
+	title: "{ftbquests.chapter.power.title}"
+	icon: "thermal:energy_cell"
+	order_index: 4
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	group: ""
+	quests: [
+		{
+			x: 0.0d
+			y: 1.0d
+			title: "{ftbquests.quest.4fc2b22ee48cd44a.title}"
+			icon: "biggerreactors:reactor_casing"
+			id: "4FC2B22EE48CD44A"
+			tasks: [{
+				id: "A67B310E46E3241B"
+				type: "checkmark"
+				title: "{ftbquests.quest.4fc2b22ee48cd44a.title}"
+			}]
+			description: [
+				"{ftbquests.quest.4fc2b22ee48cd44a.desc}"
+			]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			title: "{ftbquests.quest.a25f681c6dc8211d.title}"
+			icon: "biggerreactors:reactor_casing"
+			id: "A25F681C6DC8211D"
+			tasks: [{
+				id: "CB30DC8549CDC75D"
+				type: "checkmark"
+				title: "{ftbquests.quest.a25f681c6dc8211d.title}"
+			}]
+			description: [
+				"{ftbquests.quest.a25f681c6dc8211d.desc}"
+			]
+			dependencies: ["4FC2B22EE48CD44A"]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			title: "{ftbquests.quest.bafe054b4d2c7140.title}"
+			icon: "biggerreactors:reactor_casing"
+			id: "BAFE054B4D2C7140"
+			tasks: [{
+				id: "0501E259E8F09A87"
+				type: "checkmark"
+				title: "{ftbquests.quest.bafe054b4d2c7140.title}"
+			}]
+			description: [
+				"{ftbquests.quest.bafe054b4d2c7140.desc}"
+			]
+			dependencies: ["A25F681C6DC8211D"]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			title: "{ftbquests.quest.2a5c89d920528e0d.title}"
+			icon: "biggerreactors:reactor_casing"
+			id: "2A5C89D920528E0D"
+			tasks: [{
+				id: "EC89E8DE402CD700"
+				type: "checkmark"
+				title: "{ftbquests.quest.2a5c89d920528e0d.title}"
+			}]
+			description: [
+				"{ftbquests.quest.2a5c89d920528e0d.desc}"
+			]
+			dependencies: ["BAFE054B4D2C7140"]
+		}
+		{
+			x: 0.0d
+			y: 7.0d
+			title: "{ftbquests.quest.5367e44e9a6b839c.title}"
+			icon: "biggerreactors:reactor_casing"
+			id: "5367E44E9A6B839C"
+			tasks: [{
+				id: "0DAC7596940CBD28"
+				type: "checkmark"
+				title: "{ftbquests.quest.5367e44e9a6b839c.title}"
+			}]
+			description: [
+				"{ftbquests.quest.5367e44e9a6b839c.desc}"
+			]
+			dependencies: ["2A5C89D920528E0D"]
+		}
+		{
+			x: 0.0d
+			y: 8.5d
+			title: "{ftbquests.quest.3396b2fc9c11ec19.title}"
+			icon: "biggerreactors:reactor_casing"
+			id: "3396B2FC9C11EC19"
+			tasks: [{
+				id: "9BC05FC73C4E7E09"
+				type: "checkmark"
+				title: "{ftbquests.quest.3396b2fc9c11ec19.title}"
+			}]
+			description: [
+				"{ftbquests.quest.3396b2fc9c11ec19.desc}"
+			]
+			dependencies: ["5367E44E9A6B839C"]
+		}
+		{
+			x: 0.0d
+			y: 10.0d
+			title: "{ftbquests.quest.fe7e9149c349b7c3.title}"
+			icon: "biggerreactors:reactor_casing"
+			id: "FE7E9149C349B7C3"
+			tasks: [{
+				id: "AF676D381E2E8E1A"
+				type: "checkmark"
+				title: "{ftbquests.quest.fe7e9149c349b7c3.title}"
+			}]
+			description: [
+				"{ftbquests.quest.fe7e9149c349b7c3.desc}"
+			]
+			dependencies: ["3396B2FC9C11EC19"]
+		}
+		{
+			x: 0.0d
+			y: 11.5d
+			title: "{ftbquests.quest.20acedb635bf5836.title}"
+			icon: "biggerreactors:reactor_casing"
+			id: "20ACEDB635BF5836"
+			tasks: [{
+				id: "E22A50F1BC5B97A5"
+				type: "checkmark"
+				title: "{ftbquests.quest.20acedb635bf5836.title}"
+			}]
+			description: [
+				"{ftbquests.quest.20acedb635bf5836.desc}"
+			]
+			dependencies: ["FE7E9149C349B7C3"]
+		}
+		{
+			x: 0.0d
+			y: 13.0d
+			title: "{ftbquests.quest.ea4142fac692fe11.title}"
+			icon: "biggerreactors:reactor_casing"
+			id: "EA4142FAC692FE11"
+			tasks: [{
+				id: "C2EB3D3C9B2E1B97"
+				type: "checkmark"
+				title: "{ftbquests.quest.ea4142fac692fe11.title}"
+			}]
+			description: [
+				"{ftbquests.quest.ea4142fac692fe11.desc}"
+			]
+			dependencies: ["20ACEDB635BF5836"]
+		}
+		{
+			x: 0.0d
+			y: 14.5d
+			title: "{ftbquests.quest.7a0a0c97725889a0.title}"
+			icon: "biggerreactors:reactor_casing"
+			id: "7A0A0C97725889A0"
+			tasks: [{
+				id: "0F1C89A45EB9F8FB"
+				type: "checkmark"
+				title: "{ftbquests.quest.7a0a0c97725889a0.title}"
+			}]
+			description: [
+				"{ftbquests.quest.7a0a0c97725889a0.desc}"
+			]
+			dependencies: ["EA4142FAC692FE11"]
+		}
+		{
+			x: 0.0d
+			y: 16.0d
+			title: "{ftbquests.quest.fde59cf8595cab81.title}"
+			icon: "biggerreactors:reactor_casing"
+			id: "FDE59CF8595CAB81"
+			tasks: [{
+				id: "33F340CD629B9CB9"
+				type: "checkmark"
+				title: "{ftbquests.quest.fde59cf8595cab81.title}"
+			}]
+			description: [
+				"{ftbquests.quest.fde59cf8595cab81.desc}"
+			]
+			dependencies: ["7A0A0C97725889A0"]
+		}
+	]
+	quest_links: [ ]
+}

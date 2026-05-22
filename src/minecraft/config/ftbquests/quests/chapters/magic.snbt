@@ -1,0 +1,876 @@
+{
+	id: "4677C21EABBA261F"
+	filename: "magic"
+	title: "{ftbquests.chapter.magic.title}"
+	icon: "ars_nouveau:source_gem"
+	order_index: 6
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	group: ""
+	quests: [
+		{
+			x: 0.0d
+			y: 1.0d
+			title: "{ftbquests.quest.4b9fbada8af1ba25.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "4B9FBADA8AF1BA25"
+			tasks: [{
+				id: "BDB1A132CA2DEEC7"
+				type: "checkmark"
+				title: "{ftbquests.quest.4b9fbada8af1ba25.title}"
+			}]
+			description: [
+				"{ftbquests.quest.4b9fbada8af1ba25.desc}"
+			]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			title: "{ftbquests.quest.a79e2c90349ebe0e.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "A79E2C90349EBE0E"
+			tasks: [{
+				id: "5A0CBEA705E5F0C2"
+				type: "checkmark"
+				title: "{ftbquests.quest.a79e2c90349ebe0e.title}"
+			}]
+			description: [
+				"{ftbquests.quest.a79e2c90349ebe0e.desc}"
+			]
+			dependencies: ["4B9FBADA8AF1BA25"]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			title: "{ftbquests.quest.55318170963fff58.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "55318170963FFF58"
+			tasks: [{
+				id: "1A5081AB1B0C5972"
+				type: "checkmark"
+				title: "{ftbquests.quest.55318170963fff58.title}"
+			}]
+			description: [
+				"{ftbquests.quest.55318170963fff58.desc}"
+			]
+			dependencies: ["A79E2C90349EBE0E"]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			title: "{ftbquests.quest.0839316cee5d108e.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "0839316CEE5D108E"
+			tasks: [{
+				id: "3D92616F7B2E1362"
+				type: "checkmark"
+				title: "{ftbquests.quest.0839316cee5d108e.title}"
+			}]
+			description: [
+				"{ftbquests.quest.0839316cee5d108e.desc}"
+			]
+			dependencies: ["55318170963FFF58"]
+		}
+		{
+			x: 0.0d
+			y: 7.0d
+			title: "{ftbquests.quest.75d0c6b84626d322.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "75D0C6B84626D322"
+			tasks: [{
+				id: "1DCF0C4EA3C7E0FF"
+				type: "checkmark"
+				title: "{ftbquests.quest.75d0c6b84626d322.title}"
+			}]
+			description: [
+				"{ftbquests.quest.75d0c6b84626d322.desc}"
+			]
+			dependencies: ["0839316CEE5D108E"]
+		}
+		{
+			x: 0.0d
+			y: 8.5d
+			title: "{ftbquests.quest.c66060b24f87dcaf.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "C66060B24F87DCAF"
+			tasks: [{
+				id: "15448996C1C3F473"
+				type: "checkmark"
+				title: "{ftbquests.quest.c66060b24f87dcaf.title}"
+			}]
+			description: [
+				"{ftbquests.quest.c66060b24f87dcaf.desc}"
+			]
+			dependencies: ["75D0C6B84626D322"]
+		}
+		{
+			x: 0.0d
+			y: 10.0d
+			title: "{ftbquests.quest.3413edc3cf1d7dcf.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "3413EDC3CF1D7DCF"
+			tasks: [{
+				id: "4838AF68F229888C"
+				type: "checkmark"
+				title: "{ftbquests.quest.3413edc3cf1d7dcf.title}"
+			}]
+			description: [
+				"{ftbquests.quest.3413edc3cf1d7dcf.desc}"
+			]
+			dependencies: ["C66060B24F87DCAF"]
+		}
+		{
+			x: 0.0d
+			y: 11.5d
+			title: "{ftbquests.quest.ce9616656b4f374f.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "CE9616656B4F374F"
+			tasks: [{
+				id: "C62258B31520E3B4"
+				type: "checkmark"
+				title: "{ftbquests.quest.ce9616656b4f374f.title}"
+			}]
+			description: [
+				"{ftbquests.quest.ce9616656b4f374f.desc}"
+			]
+			dependencies: ["3413EDC3CF1D7DCF"]
+		}
+		{
+			x: 0.0d
+			y: 13.0d
+			title: "{ftbquests.quest.f410fc1eee2d3a5a.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "F410FC1EEE2D3A5A"
+			tasks: [{
+				id: "788981A27D8827D4"
+				type: "checkmark"
+				title: "{ftbquests.quest.f410fc1eee2d3a5a.title}"
+			}]
+			description: [
+				"{ftbquests.quest.f410fc1eee2d3a5a.desc}"
+			]
+			dependencies: ["CE9616656B4F374F"]
+		}
+		{
+			x: 0.0d
+			y: 14.5d
+			title: "{ftbquests.quest.068aead317e0af14.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "068AEAD317E0AF14"
+			tasks: [{
+				id: "58502D3E4F5DC034"
+				type: "checkmark"
+				title: "{ftbquests.quest.068aead317e0af14.title}"
+			}]
+			description: [
+				"{ftbquests.quest.068aead317e0af14.desc}"
+			]
+			dependencies: ["F410FC1EEE2D3A5A"]
+		}
+		{
+			x: 0.0d
+			y: 16.0d
+			title: "{ftbquests.quest.6d3cfc2cbd8d255e.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "6D3CFC2CBD8D255E"
+			tasks: [{
+				id: "A0E88B00E8A667F8"
+				type: "checkmark"
+				title: "{ftbquests.quest.6d3cfc2cbd8d255e.title}"
+			}]
+			description: [
+				"{ftbquests.quest.6d3cfc2cbd8d255e.desc}"
+			]
+			dependencies: ["068AEAD317E0AF14"]
+		}
+		{
+			x: 0.0d
+			y: 17.5d
+			title: "{ftbquests.quest.78bedc427c546a9c.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "78BEDC427C546A9C"
+			tasks: [{
+				id: "20AE7ADF438B3EEB"
+				type: "checkmark"
+				title: "{ftbquests.quest.78bedc427c546a9c.title}"
+			}]
+			description: [
+				"{ftbquests.quest.78bedc427c546a9c.desc}"
+			]
+			dependencies: ["6D3CFC2CBD8D255E"]
+		}
+		{
+			x: 0.0d
+			y: 19.0d
+			title: "{ftbquests.quest.35c8b355d686ee84.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "35C8B355D686EE84"
+			tasks: [{
+				id: "B45AEF19ECE87585"
+				type: "checkmark"
+				title: "{ftbquests.quest.35c8b355d686ee84.title}"
+			}]
+			description: [
+				"{ftbquests.quest.35c8b355d686ee84.desc}"
+			]
+			dependencies: ["78BEDC427C546A9C"]
+		}
+		{
+			x: 0.0d
+			y: 20.5d
+			title: "{ftbquests.quest.07a2c709a6bfbeb5.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "07A2C709A6BFBEB5"
+			tasks: [{
+				id: "17BCDDD85066242F"
+				type: "checkmark"
+				title: "{ftbquests.quest.07a2c709a6bfbeb5.title}"
+			}]
+			description: [
+				"{ftbquests.quest.07a2c709a6bfbeb5.desc}"
+			]
+			dependencies: ["35C8B355D686EE84"]
+		}
+		{
+			x: 0.0d
+			y: 22.0d
+			title: "{ftbquests.quest.af64ae3abe87e4ff.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "AF64AE3ABE87E4FF"
+			tasks: [{
+				id: "0FE639FBC94266A0"
+				type: "checkmark"
+				title: "{ftbquests.quest.af64ae3abe87e4ff.title}"
+			}]
+			description: [
+				"{ftbquests.quest.af64ae3abe87e4ff.desc}"
+			]
+			dependencies: ["07A2C709A6BFBEB5"]
+		}
+		{
+			x: 0.0d
+			y: 23.5d
+			title: "{ftbquests.quest.fac283abf3ecc5ac.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "FAC283ABF3ECC5AC"
+			tasks: [{
+				id: "756097781A31F333"
+				type: "checkmark"
+				title: "{ftbquests.quest.fac283abf3ecc5ac.title}"
+			}]
+			description: [
+				"{ftbquests.quest.fac283abf3ecc5ac.desc}"
+			]
+			dependencies: ["AF64AE3ABE87E4FF"]
+		}
+		{
+			x: 0.0d
+			y: 25.0d
+			title: "{ftbquests.quest.d2f7d38ad600ea0a.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "D2F7D38AD600EA0A"
+			tasks: [{
+				id: "0AF8A11A60648089"
+				type: "checkmark"
+				title: "{ftbquests.quest.d2f7d38ad600ea0a.title}"
+			}]
+			description: [
+				"{ftbquests.quest.d2f7d38ad600ea0a.desc}"
+			]
+			dependencies: ["FAC283ABF3ECC5AC"]
+		}
+		{
+			x: 0.0d
+			y: 26.5d
+			title: "{ftbquests.quest.61cdb01034bbe5a8.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "61CDB01034BBE5A8"
+			tasks: [{
+				id: "AFD3219546BE3AA9"
+				type: "checkmark"
+				title: "{ftbquests.quest.61cdb01034bbe5a8.title}"
+			}]
+			description: [
+				"{ftbquests.quest.61cdb01034bbe5a8.desc}"
+			]
+			dependencies: ["D2F7D38AD600EA0A"]
+		}
+		{
+			x: 0.0d
+			y: 28.0d
+			title: "{ftbquests.quest.7c8cf4c2a5116ed5.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "7C8CF4C2A5116ED5"
+			tasks: [{
+				id: "1C7ABCC85E0C7851"
+				type: "checkmark"
+				title: "{ftbquests.quest.7c8cf4c2a5116ed5.title}"
+			}]
+			description: [
+				"{ftbquests.quest.7c8cf4c2a5116ed5.desc}"
+			]
+			dependencies: ["61CDB01034BBE5A8"]
+		}
+		{
+			x: 0.0d
+			y: 29.5d
+			title: "{ftbquests.quest.22d710fa21a5800e.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "22D710FA21A5800E"
+			tasks: [{
+				id: "C93C374CB56A5D4E"
+				type: "checkmark"
+				title: "{ftbquests.quest.22d710fa21a5800e.title}"
+			}]
+			description: [
+				"{ftbquests.quest.22d710fa21a5800e.desc}"
+			]
+			dependencies: ["7C8CF4C2A5116ED5"]
+		}
+		{
+			x: 0.0d
+			y: 31.0d
+			title: "{ftbquests.quest.37797356c5b34c6d.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "37797356C5B34C6D"
+			tasks: [{
+				id: "BBABE3AA40289DAC"
+				type: "checkmark"
+				title: "{ftbquests.quest.37797356c5b34c6d.title}"
+			}]
+			description: [
+				"{ftbquests.quest.37797356c5b34c6d.desc}"
+			]
+			dependencies: ["22D710FA21A5800E"]
+		}
+		{
+			x: 0.0d
+			y: 32.5d
+			title: "{ftbquests.quest.e1e378fc789379d6.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "E1E378FC789379D6"
+			tasks: [{
+				id: "BDDA02D93BBF853C"
+				type: "checkmark"
+				title: "{ftbquests.quest.e1e378fc789379d6.title}"
+			}]
+			description: [
+				"{ftbquests.quest.e1e378fc789379d6.desc}"
+			]
+			dependencies: ["37797356C5B34C6D"]
+		}
+		{
+			x: 0.0d
+			y: 34.0d
+			title: "{ftbquests.quest.e9ca87f3be25afa0.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "E9CA87F3BE25AFA0"
+			tasks: [{
+				id: "E232CFFF10BB834B"
+				type: "checkmark"
+				title: "{ftbquests.quest.e9ca87f3be25afa0.title}"
+			}]
+			description: [
+				"{ftbquests.quest.e9ca87f3be25afa0.desc}"
+			]
+			dependencies: ["E1E378FC789379D6"]
+		}
+		{
+			x: 0.0d
+			y: 35.5d
+			title: "{ftbquests.quest.7ddbc612c3db86a0.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "7DDBC612C3DB86A0"
+			tasks: [{
+				id: "66007969B8425E2D"
+				type: "checkmark"
+				title: "{ftbquests.quest.7ddbc612c3db86a0.title}"
+			}]
+			description: [
+				"{ftbquests.quest.7ddbc612c3db86a0.desc}"
+			]
+			dependencies: ["E9CA87F3BE25AFA0"]
+		}
+		{
+			x: 0.0d
+			y: 37.0d
+			title: "{ftbquests.quest.ee05a960f3adc669.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "EE05A960F3ADC669"
+			tasks: [{
+				id: "002964F2E7793883"
+				type: "checkmark"
+				title: "{ftbquests.quest.ee05a960f3adc669.title}"
+			}]
+			description: [
+				"{ftbquests.quest.ee05a960f3adc669.desc}"
+			]
+			dependencies: ["7DDBC612C3DB86A0"]
+		}
+		{
+			x: 0.0d
+			y: 38.5d
+			title: "{ftbquests.quest.9ee60e75ab94b292.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "9EE60E75AB94B292"
+			tasks: [{
+				id: "0C8BD2EEF4A71E66"
+				type: "checkmark"
+				title: "{ftbquests.quest.9ee60e75ab94b292.title}"
+			}]
+			description: [
+				"{ftbquests.quest.9ee60e75ab94b292.desc}"
+			]
+			dependencies: ["EE05A960F3ADC669"]
+		}
+		{
+			x: 0.0d
+			y: 40.0d
+			title: "{ftbquests.quest.e294e49f27a0641b.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "E294E49F27A0641B"
+			tasks: [{
+				id: "09B2E45E03D80A47"
+				type: "checkmark"
+				title: "{ftbquests.quest.e294e49f27a0641b.title}"
+			}]
+			description: [
+				"{ftbquests.quest.e294e49f27a0641b.desc}"
+			]
+			dependencies: ["9EE60E75AB94B292"]
+		}
+		{
+			x: 0.0d
+			y: 41.5d
+			title: "{ftbquests.quest.3cdcaad43822d61d.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "3CDCAAD43822D61D"
+			tasks: [{
+				id: "950299A24E785436"
+				type: "checkmark"
+				title: "{ftbquests.quest.3cdcaad43822d61d.title}"
+			}]
+			description: [
+				"{ftbquests.quest.3cdcaad43822d61d.desc}"
+			]
+			dependencies: ["E294E49F27A0641B"]
+		}
+		{
+			x: 0.0d
+			y: 43.0d
+			title: "{ftbquests.quest.ed1ff83303eeeda8.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "ED1FF83303EEEDA8"
+			tasks: [{
+				id: "7A3FCD68BA7285E0"
+				type: "checkmark"
+				title: "{ftbquests.quest.ed1ff83303eeeda8.title}"
+			}]
+			description: [
+				"{ftbquests.quest.ed1ff83303eeeda8.desc}"
+			]
+			dependencies: ["3CDCAAD43822D61D"]
+		}
+		{
+			x: 0.0d
+			y: 44.5d
+			title: "{ftbquests.quest.06bed6a8b0a19a0a.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "06BED6A8B0A19A0A"
+			tasks: [{
+				id: "9A45946552D2A14D"
+				type: "checkmark"
+				title: "{ftbquests.quest.06bed6a8b0a19a0a.title}"
+			}]
+			description: [
+				"{ftbquests.quest.06bed6a8b0a19a0a.desc}"
+			]
+			dependencies: ["ED1FF83303EEEDA8"]
+		}
+		{
+			x: 0.0d
+			y: 46.0d
+			title: "{ftbquests.quest.4ee35ab1de227eb7.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "4EE35AB1DE227EB7"
+			tasks: [{
+				id: "101E1F2EDB8F0572"
+				type: "checkmark"
+				title: "{ftbquests.quest.4ee35ab1de227eb7.title}"
+			}]
+			description: [
+				"{ftbquests.quest.4ee35ab1de227eb7.desc}"
+			]
+			dependencies: ["06BED6A8B0A19A0A"]
+		}
+		{
+			x: 0.0d
+			y: 47.5d
+			title: "{ftbquests.quest.763819917da5a12b.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "763819917DA5A12B"
+			tasks: [{
+				id: "418E6529E6AB37B4"
+				type: "checkmark"
+				title: "{ftbquests.quest.763819917da5a12b.title}"
+			}]
+			description: [
+				"{ftbquests.quest.763819917da5a12b.desc}"
+			]
+			dependencies: ["4EE35AB1DE227EB7"]
+		}
+		{
+			x: 0.0d
+			y: 49.0d
+			title: "{ftbquests.quest.1fde77c41c04366e.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "1FDE77C41C04366E"
+			tasks: [{
+				id: "54420A48FD0066EE"
+				type: "checkmark"
+				title: "{ftbquests.quest.1fde77c41c04366e.title}"
+			}]
+			description: [
+				"{ftbquests.quest.1fde77c41c04366e.desc}"
+			]
+			dependencies: ["763819917DA5A12B"]
+		}
+		{
+			x: 0.0d
+			y: 50.5d
+			title: "{ftbquests.quest.a296753db59b2841.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "A296753DB59B2841"
+			tasks: [{
+				id: "FB175C79709F18AA"
+				type: "checkmark"
+				title: "{ftbquests.quest.a296753db59b2841.title}"
+			}]
+			description: [
+				"{ftbquests.quest.a296753db59b2841.desc}"
+			]
+			dependencies: ["1FDE77C41C04366E"]
+		}
+		{
+			x: 0.0d
+			y: 52.0d
+			title: "{ftbquests.quest.f313681121f53d99.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "F313681121F53D99"
+			tasks: [{
+				id: "D559A9F1F10176FB"
+				type: "checkmark"
+				title: "{ftbquests.quest.f313681121f53d99.title}"
+			}]
+			description: [
+				"{ftbquests.quest.f313681121f53d99.desc}"
+			]
+			dependencies: ["A296753DB59B2841"]
+		}
+		{
+			x: 0.0d
+			y: 53.5d
+			title: "{ftbquests.quest.c1eb0278f7b90ff0.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "C1EB0278F7B90FF0"
+			tasks: [{
+				id: "51630BB168840281"
+				type: "checkmark"
+				title: "{ftbquests.quest.c1eb0278f7b90ff0.title}"
+			}]
+			description: [
+				"{ftbquests.quest.c1eb0278f7b90ff0.desc}"
+			]
+			dependencies: ["F313681121F53D99"]
+		}
+		{
+			x: 0.0d
+			y: 55.0d
+			title: "{ftbquests.quest.764328f654548e50.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "764328F654548E50"
+			tasks: [{
+				id: "69AA7425AF7DA971"
+				type: "checkmark"
+				title: "{ftbquests.quest.764328f654548e50.title}"
+			}]
+			description: [
+				"{ftbquests.quest.764328f654548e50.desc}"
+			]
+			dependencies: ["C1EB0278F7B90FF0"]
+		}
+		{
+			x: 0.0d
+			y: 56.5d
+			title: "{ftbquests.quest.0c70f97b310dd5a6.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "0C70F97B310DD5A6"
+			tasks: [{
+				id: "831B591A1D468D86"
+				type: "checkmark"
+				title: "{ftbquests.quest.0c70f97b310dd5a6.title}"
+			}]
+			description: [
+				"{ftbquests.quest.0c70f97b310dd5a6.desc}"
+			]
+			dependencies: ["764328F654548E50"]
+		}
+		{
+			x: 0.0d
+			y: 58.0d
+			title: "{ftbquests.quest.7146ad6b91b77231.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "7146AD6B91B77231"
+			tasks: [{
+				id: "0535F71B9DBC3BCC"
+				type: "checkmark"
+				title: "{ftbquests.quest.7146ad6b91b77231.title}"
+			}]
+			description: [
+				"{ftbquests.quest.7146ad6b91b77231.desc}"
+			]
+			dependencies: ["0C70F97B310DD5A6"]
+		}
+		{
+			x: 0.0d
+			y: 59.5d
+			title: "{ftbquests.quest.9a96d0f69010cac7.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "9A96D0F69010CAC7"
+			tasks: [{
+				id: "78F44E4999E6BFDF"
+				type: "checkmark"
+				title: "{ftbquests.quest.9a96d0f69010cac7.title}"
+			}]
+			description: [
+				"{ftbquests.quest.9a96d0f69010cac7.desc}"
+			]
+			dependencies: ["7146AD6B91B77231"]
+		}
+		{
+			x: 0.0d
+			y: 61.0d
+			title: "{ftbquests.quest.7bb90184e0427851.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "7BB90184E0427851"
+			tasks: [{
+				id: "3230CA0A55E8C5D2"
+				type: "checkmark"
+				title: "{ftbquests.quest.7bb90184e0427851.title}"
+			}]
+			description: [
+				"{ftbquests.quest.7bb90184e0427851.desc}"
+			]
+			dependencies: ["9A96D0F69010CAC7"]
+		}
+		{
+			x: 0.0d
+			y: 62.5d
+			title: "{ftbquests.quest.d2aebf8acb880e01.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "D2AEBF8ACB880E01"
+			tasks: [{
+				id: "FA6B9B6622D100A7"
+				type: "checkmark"
+				title: "{ftbquests.quest.d2aebf8acb880e01.title}"
+			}]
+			description: [
+				"{ftbquests.quest.d2aebf8acb880e01.desc}"
+			]
+			dependencies: ["7BB90184E0427851"]
+		}
+		{
+			x: 0.0d
+			y: 64.0d
+			title: "{ftbquests.quest.61ee4035acf1d2cc.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "61EE4035ACF1D2CC"
+			tasks: [{
+				id: "52FCB7E7EE11EB76"
+				type: "checkmark"
+				title: "{ftbquests.quest.61ee4035acf1d2cc.title}"
+			}]
+			description: [
+				"{ftbquests.quest.61ee4035acf1d2cc.desc}"
+			]
+			dependencies: ["D2AEBF8ACB880E01"]
+		}
+		{
+			x: 0.0d
+			y: 65.5d
+			title: "{ftbquests.quest.bd79b135d56e263f.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "BD79B135D56E263F"
+			tasks: [{
+				id: "03F648141D71E8CE"
+				type: "checkmark"
+				title: "{ftbquests.quest.bd79b135d56e263f.title}"
+			}]
+			description: [
+				"{ftbquests.quest.bd79b135d56e263f.desc}"
+			]
+			dependencies: ["61EE4035ACF1D2CC"]
+		}
+		{
+			x: 0.0d
+			y: 67.0d
+			title: "{ftbquests.quest.44b523b6736d4a1c.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "44B523B6736D4A1C"
+			tasks: [{
+				id: "64099F2EBE94F7B4"
+				type: "checkmark"
+				title: "{ftbquests.quest.44b523b6736d4a1c.title}"
+			}]
+			description: [
+				"{ftbquests.quest.44b523b6736d4a1c.desc}"
+			]
+			dependencies: ["BD79B135D56E263F"]
+		}
+		{
+			x: 0.0d
+			y: 68.5d
+			title: "{ftbquests.quest.323c6dafcb44ba57.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "323C6DAFCB44BA57"
+			tasks: [{
+				id: "E44872D2A1729C17"
+				type: "checkmark"
+				title: "{ftbquests.quest.323c6dafcb44ba57.title}"
+			}]
+			description: [
+				"{ftbquests.quest.323c6dafcb44ba57.desc}"
+			]
+			dependencies: ["44B523B6736D4A1C"]
+		}
+		{
+			x: 0.0d
+			y: 70.0d
+			title: "{ftbquests.quest.c7c2b2e28d69d690.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "C7C2B2E28D69D690"
+			tasks: [{
+				id: "2D79187FAB5DA10D"
+				type: "checkmark"
+				title: "{ftbquests.quest.c7c2b2e28d69d690.title}"
+			}]
+			description: [
+				"{ftbquests.quest.c7c2b2e28d69d690.desc}"
+			]
+			dependencies: ["323C6DAFCB44BA57"]
+		}
+		{
+			x: 0.0d
+			y: 71.5d
+			title: "{ftbquests.quest.6c2aa425c1bcba55.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "6C2AA425C1BCBA55"
+			tasks: [{
+				id: "F15ECDF3CA8E9336"
+				type: "checkmark"
+				title: "{ftbquests.quest.6c2aa425c1bcba55.title}"
+			}]
+			description: [
+				"{ftbquests.quest.6c2aa425c1bcba55.desc}"
+			]
+			dependencies: ["C7C2B2E28D69D690"]
+		}
+		{
+			x: 0.0d
+			y: 73.0d
+			title: "{ftbquests.quest.92bf383c8adfb533.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "92BF383C8ADFB533"
+			tasks: [{
+				id: "75D9D4DAA48486A5"
+				type: "checkmark"
+				title: "{ftbquests.quest.92bf383c8adfb533.title}"
+			}]
+			description: [
+				"{ftbquests.quest.92bf383c8adfb533.desc}"
+			]
+			dependencies: ["6C2AA425C1BCBA55"]
+		}
+		{
+			x: 0.0d
+			y: 74.5d
+			title: "{ftbquests.quest.a2a11e5c222191fc.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "A2A11E5C222191FC"
+			tasks: [{
+				id: "D7D3D116B9525895"
+				type: "checkmark"
+				title: "{ftbquests.quest.a2a11e5c222191fc.title}"
+			}]
+			description: [
+				"{ftbquests.quest.a2a11e5c222191fc.desc}"
+			]
+			dependencies: ["92BF383C8ADFB533"]
+		}
+		{
+			x: 0.0d
+			y: 76.0d
+			title: "{ftbquests.quest.16e3c6b57d60ccb0.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "16E3C6B57D60CCB0"
+			tasks: [{
+				id: "15A5142F22BE4D32"
+				type: "checkmark"
+				title: "{ftbquests.quest.16e3c6b57d60ccb0.title}"
+			}]
+			description: [
+				"{ftbquests.quest.16e3c6b57d60ccb0.desc}"
+			]
+			dependencies: ["A2A11E5C222191FC"]
+		}
+		{
+			x: 0.0d
+			y: 77.5d
+			title: "{ftbquests.quest.cb88247c900d30fd.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "CB88247C900D30FD"
+			tasks: [{
+				id: "9D9C38F9692D66B7"
+				type: "checkmark"
+				title: "{ftbquests.quest.cb88247c900d30fd.title}"
+			}]
+			description: [
+				"{ftbquests.quest.cb88247c900d30fd.desc}"
+			]
+			dependencies: ["16E3C6B57D60CCB0"]
+		}
+		{
+			x: 0.0d
+			y: 79.0d
+			title: "{ftbquests.quest.adb83538651e452f.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "ADB83538651E452F"
+			tasks: [{
+				id: "DE4E78A98764B721"
+				type: "checkmark"
+				title: "{ftbquests.quest.adb83538651e452f.title}"
+			}]
+			description: [
+				"{ftbquests.quest.adb83538651e452f.desc}"
+			]
+			dependencies: ["CB88247C900D30FD"]
+		}
+		{
+			x: 0.0d
+			y: 80.5d
+			title: "{ftbquests.quest.78da85e0f323bbe6.title}"
+			icon: "ars_nouveau:source_gem"
+			id: "78DA85E0F323BBE6"
+			tasks: [{
+				id: "E2DE2452BB0BD82C"
+				type: "checkmark"
+				title: "{ftbquests.quest.78da85e0f323bbe6.title}"
+			}]
+			description: [
+				"{ftbquests.quest.78da85e0f323bbe6.desc}"
+			]
+			dependencies: ["ADB83538651E452F"]
+		}
+	]
+	quest_links: [ ]
+}

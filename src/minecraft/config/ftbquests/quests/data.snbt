@@ -1,0 +1,21 @@
+{
+	default_reward_team: false
+	default_team_consume_items: false
+	default_quest_disable_jei: false
+	default_quest_shape: ""
+	default_quest_size: 1.0d
+	default_repeatable_quest: false
+	drop_loot_crates: false
+	emergency_items: [ ]
+	emergency_items_cooldown: 300
+	loot_crate_no_drop: { passive: 400, monster: 600, boss: 0 }
+	loot_crates: { }
+	lock_message: ""
+	detection_delay: 20
+	disable_gui: false
+	grid_scale: 0.5d
+	pause_game: false
+	lock_team: false
+	drop_loot_crates_on_monsters: false
+	drop_loot_crates_on_bosses: true
+}

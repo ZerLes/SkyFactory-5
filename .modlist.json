@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$comment": "Tracked mod manifest. Sourced from CurseForge. Jars are NOT committed; install via npm run start or your CurseForge launcher.",
+  "minecraft": {
+    "version": "1.20.1",
+    "loader": "forge",
+    "loaderVersion": "47.4.0"
+  },
+  "mods": {
+    "added_for_ftb_quests_migration": [
+      {
+        "modId": "ftbquests",
+        "displayName": "FTB Quests Forge",
+        "side": "both",
+        "curseforge": {
+          "projectId": 289412,
+          "slug": "ftb-quests-forge",
+          "recommendedFileVersion": "2007.x for 1.20.1"
+        },
+        "purpose": "Tree-based quest book UI replacing the legacy Checklist book."
+      },
+      {
+        "modId": "ftblibrary",
+        "displayName": "FTB Library Forge",
+        "side": "both",
+        "curseforge": {
+          "projectId": 404465,
+          "slug": "ftb-library-forge",
+          "recommendedFileVersion": "2007.x for 1.20.1"
+        },
+        "purpose": "Required dependency of FTB Quests and FTB Teams."
+      },
+      {
+        "modId": "ftbteams",
+        "displayName": "FTB Teams Forge",
+        "side": "both",
+        "curseforge": {
+          "projectId": 404468,
+          "slug": "ftb-teams-forge",
+          "recommendedFileVersion": "2007.x for 1.20.1"
+        },
+        "purpose": "Team / single-player mode backing for FTB Quests. Configured to 'single' so quests are per-player."
+      }
+    ]
+  },
+  "notes": [
+    "Drop the three jars into ./minecraft/mods/ before running 'npm run start'.",
+    "The Checklist mod is intentionally kept installed in parallel — both quest systems coexist.",
+    "CurseForge project IDs are stable; recommended file versions update as the modpack moves forward — re-pin per release."
+  ]
+}

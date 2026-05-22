@@ -1,0 +1,426 @@
+{
+	id: "2F28A06857097B89"
+	filename: "getting_started"
+	title: "{ftbquests.chapter.getting_started.title}"
+	icon: "minecraft:grass_block"
+	order_index: 0
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	group: ""
+	quests: [
+		{
+			x: 0.0d
+			y: 1.0d
+			title: "{ftbquests.quest.7c8df3e097e319fc.title}"
+			icon: "minecraft:white_wool"
+			id: "7C8DF3E097E319FC"
+			tasks: [{
+				id: "1EADB54A7C56242E"
+				type: "checkmark"
+				title: "{ftbquests.quest.7c8df3e097e319fc.title}"
+			}]
+			description: [
+				"{ftbquests.quest.7c8df3e097e319fc.desc}"
+			]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			title: "{ftbquests.quest.bce0485ccf92da1a.title}"
+			icon: "minecraft:white_wool"
+			id: "BCE0485CCF92DA1A"
+			tasks: [{
+				id: "F1451CB94802A393"
+				type: "checkmark"
+				title: "{ftbquests.quest.bce0485ccf92da1a.title}"
+			}]
+			description: [
+				"{ftbquests.quest.bce0485ccf92da1a.desc}"
+			]
+			dependencies: ["7C8DF3E097E319FC"]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			title: "{ftbquests.quest.a37510ec7a3b86b4.title}"
+			icon: "minecraft:white_wool"
+			id: "A37510EC7A3B86B4"
+			tasks: [{
+				id: "10B022E8BE926867"
+				type: "checkmark"
+				title: "{ftbquests.quest.a37510ec7a3b86b4.title}"
+			}]
+			description: [
+				"{ftbquests.quest.a37510ec7a3b86b4.desc}"
+			]
+			dependencies: ["BCE0485CCF92DA1A"]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			title: "{ftbquests.quest.bb96e110dd945484.title}"
+			icon: "minecraft:white_wool"
+			id: "BB96E110DD945484"
+			tasks: [{
+				id: "1C4B7986BA2E3242"
+				type: "checkmark"
+				title: "{ftbquests.quest.bb96e110dd945484.title}"
+			}]
+			description: [
+				"{ftbquests.quest.bb96e110dd945484.desc}"
+			]
+			dependencies: ["A37510EC7A3B86B4"]
+		}
+		{
+			x: 0.0d
+			y: 7.0d
+			title: "{ftbquests.quest.29337eeee51af49b.title}"
+			icon: "minecraft:white_wool"
+			id: "29337EEEE51AF49B"
+			tasks: [{
+				id: "94C92226C049345B"
+				type: "checkmark"
+				title: "{ftbquests.quest.29337eeee51af49b.title}"
+			}]
+			description: [
+				"{ftbquests.quest.29337eeee51af49b.desc}"
+			]
+			dependencies: ["BB96E110DD945484"]
+		}
+		{
+			x: 0.0d
+			y: 8.5d
+			title: "{ftbquests.quest.0f420de00e6bac25.title}"
+			icon: "minecraft:white_wool"
+			id: "0F420DE00E6BAC25"
+			tasks: [{
+				id: "8ACDC0EE685F18FE"
+				type: "checkmark"
+				title: "{ftbquests.quest.0f420de00e6bac25.title}"
+			}]
+			description: [
+				"{ftbquests.quest.0f420de00e6bac25.desc}"
+			]
+			dependencies: ["29337EEEE51AF49B"]
+		}
+		{
+			x: 0.0d
+			y: 10.0d
+			title: "{ftbquests.quest.7560ae88bb9b68ce.title}"
+			icon: "minecraft:white_wool"
+			id: "7560AE88BB9B68CE"
+			tasks: [{
+				id: "6D7EEF84701A396C"
+				type: "checkmark"
+				title: "{ftbquests.quest.7560ae88bb9b68ce.title}"
+			}]
+			description: [
+				"{ftbquests.quest.7560ae88bb9b68ce.desc}"
+			]
+			dependencies: ["0F420DE00E6BAC25"]
+		}
+		{
+			x: 0.0d
+			y: 11.5d
+			title: "{ftbquests.quest.5e415d7b54c4c2c7.title}"
+			icon: "minecraft:white_wool"
+			id: "5E415D7B54C4C2C7"
+			tasks: [{
+				id: "D9B23D64AB96BA79"
+				type: "checkmark"
+				title: "{ftbquests.quest.5e415d7b54c4c2c7.title}"
+			}]
+			description: [
+				"{ftbquests.quest.5e415d7b54c4c2c7.desc}"
+			]
+			dependencies: ["7560AE88BB9B68CE"]
+		}
+		{
+			x: 0.0d
+			y: 13.0d
+			title: "{ftbquests.quest.0ab74409482b7bf3.title}"
+			icon: "minecraft:white_wool"
+			id: "0AB74409482B7BF3"
+			tasks: [{
+				id: "7AE440D41708ABCE"
+				type: "checkmark"
+				title: "{ftbquests.quest.0ab74409482b7bf3.title}"
+			}]
+			description: [
+				"{ftbquests.quest.0ab74409482b7bf3.desc}"
+			]
+			dependencies: ["5E415D7B54C4C2C7"]
+		}
+		{
+			x: 0.0d
+			y: 14.5d
+			title: "{ftbquests.quest.5f9362199222ad21.title}"
+			icon: "minecraft:white_wool"
+			id: "5F9362199222AD21"
+			tasks: [{
+				id: "48F66D1501D74847"
+				type: "checkmark"
+				title: "{ftbquests.quest.5f9362199222ad21.title}"
+			}]
+			description: [
+				"{ftbquests.quest.5f9362199222ad21.desc}"
+			]
+			dependencies: ["0AB74409482B7BF3"]
+		}
+		{
+			x: 0.0d
+			y: 16.0d
+			title: "{ftbquests.quest.fc8b2bd36bf1fd71.title}"
+			icon: "minecraft:white_wool"
+			id: "FC8B2BD36BF1FD71"
+			tasks: [{
+				id: "8B8AA03DFF9F8BA6"
+				type: "checkmark"
+				title: "{ftbquests.quest.fc8b2bd36bf1fd71.title}"
+			}]
+			description: [
+				"{ftbquests.quest.fc8b2bd36bf1fd71.desc}"
+			]
+			dependencies: ["5F9362199222AD21"]
+		}
+		{
+			x: 0.0d
+			y: 17.5d
+			title: "{ftbquests.quest.a692fda4a82cbcb1.title}"
+			icon: "minecraft:white_wool"
+			id: "A692FDA4A82CBCB1"
+			tasks: [{
+				id: "B75B51D1FC20E866"
+				type: "checkmark"
+				title: "{ftbquests.quest.a692fda4a82cbcb1.title}"
+			}]
+			description: [
+				"{ftbquests.quest.a692fda4a82cbcb1.desc}"
+			]
+			dependencies: ["FC8B2BD36BF1FD71"]
+		}
+		{
+			x: 0.0d
+			y: 19.0d
+			title: "{ftbquests.quest.6ad12d47107acb04.title}"
+			icon: "minecraft:white_wool"
+			id: "6AD12D47107ACB04"
+			tasks: [{
+				id: "F0CFE7A4FA6AD47E"
+				type: "checkmark"
+				title: "{ftbquests.quest.6ad12d47107acb04.title}"
+			}]
+			description: [
+				"{ftbquests.quest.6ad12d47107acb04.desc}"
+			]
+			dependencies: ["A692FDA4A82CBCB1"]
+		}
+		{
+			x: 0.0d
+			y: 20.5d
+			title: "{ftbquests.quest.6f7fbbe148064164.title}"
+			icon: "minecraft:white_wool"
+			id: "6F7FBBE148064164"
+			tasks: [{
+				id: "B40A5D1F4E5D6E15"
+				type: "checkmark"
+				title: "{ftbquests.quest.6f7fbbe148064164.title}"
+			}]
+			description: [
+				"{ftbquests.quest.6f7fbbe148064164.desc}"
+			]
+			dependencies: ["6AD12D47107ACB04"]
+		}
+		{
+			x: 0.0d
+			y: 22.0d
+			title: "{ftbquests.quest.404ed8c1f08014f8.title}"
+			icon: "minecraft:white_wool"
+			id: "404ED8C1F08014F8"
+			tasks: [{
+				id: "C5E46EBE18A69FDE"
+				type: "checkmark"
+				title: "{ftbquests.quest.404ed8c1f08014f8.title}"
+			}]
+			description: [
+				"{ftbquests.quest.404ed8c1f08014f8.desc}"
+			]
+			dependencies: ["6F7FBBE148064164"]
+		}
+		{
+			x: 0.0d
+			y: 23.5d
+			title: "{ftbquests.quest.5efdbaa8e0d71293.title}"
+			icon: "minecraft:white_wool"
+			id: "5EFDBAA8E0D71293"
+			tasks: [{
+				id: "23840C8A96C1B5E9"
+				type: "checkmark"
+				title: "{ftbquests.quest.5efdbaa8e0d71293.title}"
+			}]
+			description: [
+				"{ftbquests.quest.5efdbaa8e0d71293.desc}"
+			]
+			dependencies: ["404ED8C1F08014F8"]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			title: "{ftbquests.quest.b81aea269d8e19e4.title}"
+			icon: "minecraft:cobblestone"
+			id: "B81AEA269D8E19E4"
+			tasks: [{
+				id: "E392379CA78D01E2"
+				type: "checkmark"
+				title: "{ftbquests.quest.b81aea269d8e19e4.title}"
+			}]
+			description: [
+				"{ftbquests.quest.b81aea269d8e19e4.desc}"
+			]
+		}
+		{
+			x: 4.0d
+			y: 2.5d
+			title: "{ftbquests.quest.4e4cf2d27ba2d029.title}"
+			icon: "minecraft:cobblestone"
+			id: "4E4CF2D27BA2D029"
+			tasks: [{
+				id: "119DD27BF329A225"
+				type: "checkmark"
+				title: "{ftbquests.quest.4e4cf2d27ba2d029.title}"
+			}]
+			description: [
+				"{ftbquests.quest.4e4cf2d27ba2d029.desc}"
+			]
+			dependencies: ["B81AEA269D8E19E4"]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			title: "{ftbquests.quest.3f5aa9a592917d94.title}"
+			icon: "minecraft:cobblestone"
+			id: "3F5AA9A592917D94"
+			tasks: [{
+				id: "701FA62720206ADA"
+				type: "checkmark"
+				title: "{ftbquests.quest.3f5aa9a592917d94.title}"
+			}]
+			description: [
+				"{ftbquests.quest.3f5aa9a592917d94.desc}"
+			]
+			dependencies: ["4E4CF2D27BA2D029"]
+		}
+		{
+			x: 4.0d
+			y: 5.5d
+			title: "{ftbquests.quest.096d3b92e663cb71.title}"
+			icon: "minecraft:cobblestone"
+			id: "096D3B92E663CB71"
+			tasks: [{
+				id: "6031719A44D63257"
+				type: "checkmark"
+				title: "{ftbquests.quest.096d3b92e663cb71.title}"
+			}]
+			description: [
+				"{ftbquests.quest.096d3b92e663cb71.desc}"
+			]
+			dependencies: ["3F5AA9A592917D94"]
+		}
+		{
+			x: 8.0d
+			y: 1.0d
+			title: "{ftbquests.quest.cbbdc89bd7c845fa.title}"
+			icon: "minecraft:cyan_dye"
+			id: "CBBDC89BD7C845FA"
+			tasks: [{
+				id: "5AF35F18C383A049"
+				type: "checkmark"
+				title: "{ftbquests.quest.cbbdc89bd7c845fa.title}"
+			}]
+			description: [
+				"{ftbquests.quest.cbbdc89bd7c845fa.desc}"
+			]
+		}
+		{
+			x: 8.0d
+			y: 2.5d
+			title: "{ftbquests.quest.7646a7b0d274cd26.title}"
+			icon: "minecraft:cyan_dye"
+			id: "7646A7B0D274CD26"
+			tasks: [{
+				id: "65F042259466BF89"
+				type: "checkmark"
+				title: "{ftbquests.quest.7646a7b0d274cd26.title}"
+			}]
+			description: [
+				"{ftbquests.quest.7646a7b0d274cd26.desc}"
+			]
+			dependencies: ["CBBDC89BD7C845FA"]
+		}
+		{
+			x: 8.0d
+			y: 4.0d
+			title: "{ftbquests.quest.d8c19151cdebba0a.title}"
+			icon: "minecraft:cyan_dye"
+			id: "D8C19151CDEBBA0A"
+			tasks: [{
+				id: "F563DBA10CE939D9"
+				type: "checkmark"
+				title: "{ftbquests.quest.d8c19151cdebba0a.title}"
+			}]
+			description: [
+				"{ftbquests.quest.d8c19151cdebba0a.desc}"
+			]
+			dependencies: ["7646A7B0D274CD26"]
+		}
+		{
+			x: 8.0d
+			y: 5.5d
+			title: "{ftbquests.quest.68d68471dcc7a757.title}"
+			icon: "minecraft:cyan_dye"
+			id: "68D68471DCC7A757"
+			tasks: [{
+				id: "C44F86ED8AC91FE4"
+				type: "checkmark"
+				title: "{ftbquests.quest.68d68471dcc7a757.title}"
+			}]
+			description: [
+				"{ftbquests.quest.68d68471dcc7a757.desc}"
+			]
+			dependencies: ["D8C19151CDEBBA0A"]
+		}
+		{
+			x: 8.0d
+			y: 7.0d
+			title: "{ftbquests.quest.a8b6a24c0d6b42e8.title}"
+			icon: "minecraft:cyan_dye"
+			id: "A8B6A24C0D6B42E8"
+			tasks: [{
+				id: "9383501D3F4C6B0C"
+				type: "checkmark"
+				title: "{ftbquests.quest.a8b6a24c0d6b42e8.title}"
+			}]
+			description: [
+				"{ftbquests.quest.a8b6a24c0d6b42e8.desc}"
+			]
+			dependencies: ["68D68471DCC7A757"]
+		}
+		{
+			x: 8.0d
+			y: 8.5d
+			title: "{ftbquests.quest.3af10059297beac4.title}"
+			icon: "minecraft:cyan_dye"
+			id: "3AF10059297BEAC4"
+			tasks: [{
+				id: "110BF6E70CE30DB0"
+				type: "checkmark"
+				title: "{ftbquests.quest.3af10059297beac4.title}"
+			}]
+			description: [
+				"{ftbquests.quest.3af10059297beac4.desc}"
+			]
+			dependencies: ["A8B6A24C0D6B42E8"]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,19 @@
+{
+	chat_link_in_command: false
+	chat_link_in_other_messages: true
+	chat_link_protocols: ["http", "https"]
+	close_gui_on_esc: true
+	disable_gui: false
+	disable_toast: false
+	export_quest_book_image: false
+	expand_all_chapters: true
+	grid_scale: 0.5d
+	hide_quest_until_dependencies_are_visible: false
+	let_player_pin_quests: true
+	open_book_on_quest_screen: false
+	practice_mode: false
+	reload_on_world_change: false
+	show_quests_in_jei: true
+	speed_up_quest_marker_blink: false
+	zoom_factor: 1.0d
+}
