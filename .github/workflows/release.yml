@@ -1,0 +1,131 @@
+name: release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Branch / tag / sha to release from"
+        required: true
+        default: "develop"
+
+permissions:
+  contents: write # required to create a GitHub Release
+
+concurrency:
+  group: release-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    name: Build + publish GitHub Release
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.ref || github.ref }}
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install deps
+        run: npm ci --no-audit --no-fund --prefer-offline
+
+      - name: Resolve version
+        id: ver
+        shell: bash
+        run: |
+          set -euxo pipefail
+          PACK_VERSION="$(node -p "require('./mc-package.json').version")"
+          TAG="${GITHUB_REF_NAME}"
+          # When tag-triggered: the tag must match v{pack-version}
+          if [[ "${GITHUB_EVENT_NAME}" == "push" ]]; then
+            EXPECTED="v${PACK_VERSION}"
+            if [[ "${TAG}" != "${EXPECTED}" ]]; then
+              echo "::error::Tag ${TAG} does not match mc-package.json version (${EXPECTED}). Bump mc-package.json or retag."
+              exit 1
+            fi
+          fi
+          # Pre-release detection: any tag with a '-' suffix (v5.0.9-rc1, v5.0.9-beta, etc.) is a pre-release.
+          if [[ "${PACK_VERSION}" == *-* ]] || [[ "${TAG}" == *-* ]]; then
+            PRERELEASE="true"
+          else
+            PRERELEASE="false"
+          fi
+          echo "version=${PACK_VERSION}" >> "$GITHUB_OUTPUT"
+          echo "tag=v${PACK_VERSION}" >> "$GITHUB_OUTPUT"
+          echo "prerelease=${PRERELEASE}" >> "$GITHUB_OUTPUT"
+
+      - name: Build production zips
+        env:
+          NODE_ENV: production
+          CI: "true"
+          SF5_CI_SKIP_FORGE_DOWNLOAD: "true"
+        run: |
+          # See build.yml for the rationale on bypassing `npm run release` — the nested
+          # `npm install` in that script re-triggers the husky `prepare` hook with a
+          # stripped PATH and fails in CI. Deps are already installed via `npm ci`.
+          ./node_modules/.bin/cross-env NODE_ENV=production ./node_modules/.bin/ts-node ./scripts/release/index.ts
+
+      - name: Stage release assets
+        id: stage
+        shell: bash
+        run: |
+          set -euxo pipefail
+          mkdir -p ./release-assets
+          shopt -s nullglob
+          for f in .releases/*.zip; do cp "$f" ./release-assets/; done
+          ls -la ./release-assets
+          {
+            echo "files<<EOF"
+            ls ./release-assets/*.zip
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Generate release notes
+        id: notes
+        shell: bash
+        run: |
+          set -euxo pipefail
+          PREV_TAG="$(git describe --tags --abbrev=0 HEAD^ 2>/dev/null || echo '')"
+          {
+            echo "## SkyFactory 5 v${{ steps.ver.outputs.version }}"
+            echo
+            if [[ -n "${PREV_TAG}" ]]; then
+              echo "### Changes since ${PREV_TAG}"
+              git log --pretty=format:'- %s (%h)' "${PREV_TAG}..HEAD"
+            else
+              echo "### Initial release"
+              git log -1 --pretty=format:'- %s (%h)'
+            fi
+            echo
+            echo
+            echo "### Artifacts"
+            echo "- \`SkyFactory 5 v${{ steps.ver.outputs.version }}.zip\` — client modpack (drop into your CurseForge or Prism Launcher \"Import zip\" flow)"
+            echo "- \`SkyFactory 5 Server v${{ steps.ver.outputs.version }}.zip\` — server pack (unzip + run the included Forge installer)"
+            echo
+            echo "_Built by .github/workflows/release.yml from \`mc-package.json\` version field._"
+          } > release-notes.md
+          cat release-notes.md
+
+      - name: Create GitHub Release
+        # Pinned to v2.0.6 (commit SHA) to mitigate supply-chain risk of floating tag.
+        # Bump intentionally via Dependabot or a manual PR.
+        uses: softprops/action-gh-release@a74c6b72af54cfa997e81df42d94703d6313a2d0
+        with:
+          tag_name: ${{ steps.ver.outputs.tag }}
+          name: SkyFactory 5 ${{ steps.ver.outputs.tag }}
+          body_path: release-notes.md
+          draft: false
+          prerelease: ${{ steps.ver.outputs.prerelease == 'true' }}
+          fail_on_unmatched_files: true
+          files: |
+            release-assets/*.zip

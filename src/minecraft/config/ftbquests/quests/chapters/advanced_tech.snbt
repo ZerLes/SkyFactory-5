@@ -1,0 +1,251 @@
+{
+	id: "7520B37A304A429B"
+	filename: "advanced_tech"
+	title: "{ftbquests.chapter.advanced_tech.title}"
+	icon: "ae2:controller"
+	order_index: 5
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	group: ""
+	quests: [
+		{
+			x: 0.0d
+			y: 1.0d
+			title: "{ftbquests.quest.a4e1796eac2bb778.title}"
+			icon: "modulargolems:metal_golem_body"
+			id: "A4E1796EAC2BB778"
+			tasks: [{
+				id: "6AA2D61FFC7DB7E6"
+				type: "checkmark"
+				title: "{ftbquests.quest.a4e1796eac2bb778.title}"
+			}]
+			description: [
+				"{ftbquests.quest.a4e1796eac2bb778.desc}"
+			]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			title: "{ftbquests.quest.c5879f16f61babed.title}"
+			icon: "modulargolems:metal_golem_body"
+			id: "C5879F16F61BABED"
+			tasks: [{
+				id: "EB14EDDD2CFCEF91"
+				type: "checkmark"
+				title: "{ftbquests.quest.c5879f16f61babed.title}"
+			}]
+			description: [
+				"{ftbquests.quest.c5879f16f61babed.desc}"
+			]
+			dependencies: ["A4E1796EAC2BB778"]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			title: "{ftbquests.quest.b4a6c607f8a461dd.title}"
+			icon: "modulargolems:metal_golem_body"
+			id: "B4A6C607F8A461DD"
+			tasks: [{
+				id: "FAFA6FB15F542F58"
+				type: "checkmark"
+				title: "{ftbquests.quest.b4a6c607f8a461dd.title}"
+			}]
+			description: [
+				"{ftbquests.quest.b4a6c607f8a461dd.desc}"
+			]
+			dependencies: ["C5879F16F61BABED"]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			title: "{ftbquests.quest.1ab6fc7f91065b89.title}"
+			icon: "modulargolems:metal_golem_body"
+			id: "1AB6FC7F91065B89"
+			tasks: [{
+				id: "8601804E6B4B7EFF"
+				type: "checkmark"
+				title: "{ftbquests.quest.1ab6fc7f91065b89.title}"
+			}]
+			description: [
+				"{ftbquests.quest.1ab6fc7f91065b89.desc}"
+			]
+			dependencies: ["B4A6C607F8A461DD"]
+		}
+		{
+			x: 0.0d
+			y: 7.0d
+			title: "{ftbquests.quest.851862cc40413b66.title}"
+			icon: "modulargolems:metal_golem_body"
+			id: "851862CC40413B66"
+			tasks: [{
+				id: "010FC4F09FB7087D"
+				type: "checkmark"
+				title: "{ftbquests.quest.851862cc40413b66.title}"
+			}]
+			description: [
+				"{ftbquests.quest.851862cc40413b66.desc}"
+			]
+			dependencies: ["1AB6FC7F91065B89"]
+		}
+		{
+			x: 0.0d
+			y: 8.5d
+			title: "{ftbquests.quest.fa4a4bb8b8eac87b.title}"
+			icon: "modulargolems:metal_golem_body"
+			id: "FA4A4BB8B8EAC87B"
+			tasks: [{
+				id: "85F9E62A4C5CD5C4"
+				type: "checkmark"
+				title: "{ftbquests.quest.fa4a4bb8b8eac87b.title}"
+			}]
+			description: [
+				"{ftbquests.quest.fa4a4bb8b8eac87b.desc}"
+			]
+			dependencies: ["851862CC40413B66"]
+		}
+		{
+			x: 0.0d
+			y: 10.0d
+			title: "{ftbquests.quest.a1eb264a41ac265b.title}"
+			icon: "modulargolems:metal_golem_body"
+			id: "A1EB264A41AC265B"
+			tasks: [{
+				id: "BCAD05080576F634"
+				type: "checkmark"
+				title: "{ftbquests.quest.a1eb264a41ac265b.title}"
+			}]
+			description: [
+				"{ftbquests.quest.a1eb264a41ac265b.desc}"
+			]
+			dependencies: ["FA4A4BB8B8EAC87B"]
+		}
+		{
+			x: 0.0d
+			y: 11.5d
+			title: "{ftbquests.quest.1586f4d38a66e5ee.title}"
+			icon: "modulargolems:metal_golem_body"
+			id: "1586F4D38A66E5EE"
+			tasks: [{
+				id: "8D61A610F9A68010"
+				type: "checkmark"
+				title: "{ftbquests.quest.1586f4d38a66e5ee.title}"
+			}]
+			description: [
+				"{ftbquests.quest.1586f4d38a66e5ee.desc}"
+			]
+			dependencies: ["A1EB264A41AC265B"]
+		}
+		{
+			x: 0.0d
+			y: 13.0d
+			title: "{ftbquests.quest.a414909ef47b0bfc.title}"
+			icon: "modulargolems:metal_golem_body"
+			id: "A414909EF47B0BFC"
+			tasks: [{
+				id: "A73F11B00A2D5457"
+				type: "checkmark"
+				title: "{ftbquests.quest.a414909ef47b0bfc.title}"
+			}]
+			description: [
+				"{ftbquests.quest.a414909ef47b0bfc.desc}"
+			]
+			dependencies: ["1586F4D38A66E5EE"]
+		}
+		{
+			x: 0.0d
+			y: 14.5d
+			title: "{ftbquests.quest.45f4707d59c72c70.title}"
+			icon: "modulargolems:metal_golem_body"
+			id: "45F4707D59C72C70"
+			tasks: [{
+				id: "E45E70FCDA7ED617"
+				type: "checkmark"
+				title: "{ftbquests.quest.45f4707d59c72c70.title}"
+			}]
+			description: [
+				"{ftbquests.quest.45f4707d59c72c70.desc}"
+			]
+			dependencies: ["A414909EF47B0BFC"]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			title: "{ftbquests.quest.ad6d5903c31140e1.title}"
+			icon: "industrialforegoing:mob_duplicator"
+			id: "AD6D5903C31140E1"
+			tasks: [{
+				id: "76AA267F7047B8C8"
+				type: "checkmark"
+				title: "{ftbquests.quest.ad6d5903c31140e1.title}"
+			}]
+			description: [
+				"{ftbquests.quest.ad6d5903c31140e1.desc}"
+			]
+		}
+		{
+			x: 4.0d
+			y: 2.5d
+			title: "{ftbquests.quest.7408368e7807d304.title}"
+			icon: "industrialforegoing:mob_duplicator"
+			id: "7408368E7807D304"
+			tasks: [{
+				id: "591B9119C1E27F25"
+				type: "checkmark"
+				title: "{ftbquests.quest.7408368e7807d304.title}"
+			}]
+			description: [
+				"{ftbquests.quest.7408368e7807d304.desc}"
+			]
+			dependencies: ["AD6D5903C31140E1"]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			title: "{ftbquests.quest.7496900dac04b564.title}"
+			icon: "industrialforegoing:mob_duplicator"
+			id: "7496900DAC04B564"
+			tasks: [{
+				id: "06CA9E682055F722"
+				type: "checkmark"
+				title: "{ftbquests.quest.7496900dac04b564.title}"
+			}]
+			description: [
+				"{ftbquests.quest.7496900dac04b564.desc}"
+			]
+			dependencies: ["7408368E7807D304"]
+		}
+		{
+			x: 4.0d
+			y: 5.5d
+			title: "{ftbquests.quest.c36b339dc2ca8ce1.title}"
+			icon: "industrialforegoing:mob_duplicator"
+			id: "C36B339DC2CA8CE1"
+			tasks: [{
+				id: "0A55DF6186C40D1C"
+				type: "checkmark"
+				title: "{ftbquests.quest.c36b339dc2ca8ce1.title}"
+			}]
+			description: [
+				"{ftbquests.quest.c36b339dc2ca8ce1.desc}"
+			]
+			dependencies: ["7496900DAC04B564"]
+		}
+		{
+			x: 4.0d
+			y: 7.0d
+			title: "{ftbquests.quest.ade2a88a4db8b151.title}"
+			icon: "industrialforegoing:mob_duplicator"
+			id: "ADE2A88A4DB8B151"
+			tasks: [{
+				id: "9C65B673886AA905"
+				type: "checkmark"
+				title: "{ftbquests.quest.ade2a88a4db8b151.title}"
+			}]
+			description: [
+				"{ftbquests.quest.ade2a88a4db8b151.desc}"
+			]
+			dependencies: ["C36B339DC2CA8CE1"]
+		}
+	]
+	quest_links: [ ]
+}

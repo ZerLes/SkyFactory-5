@@ -1,0 +1,124 @@
+{
+	id: "3CAEE4A7824B7D85"
+	filename: "tech_basics"
+	title: "{ftbquests.chapter.tech_basics.title}"
+	icon: "minecraft:redstone_torch"
+	order_index: 1
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	group: ""
+	quests: [
+		{
+			x: 0.0d
+			y: 1.0d
+			title: "{ftbquests.quest.29d574abf048f63d.title}"
+			icon: "thermal:dynamo_stirling"
+			id: "29D574ABF048F63D"
+			tasks: [{
+				id: "9BFB38B644F49DA7"
+				type: "checkmark"
+				title: "{ftbquests.quest.29d574abf048f63d.title}"
+			}]
+			description: [
+				"{ftbquests.quest.29d574abf048f63d.desc}"
+			]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			title: "{ftbquests.quest.9fc77e65568cd499.title}"
+			icon: "thermal:dynamo_stirling"
+			id: "9FC77E65568CD499"
+			tasks: [{
+				id: "46338CF7EE01A48B"
+				type: "checkmark"
+				title: "{ftbquests.quest.9fc77e65568cd499.title}"
+			}]
+			description: [
+				"{ftbquests.quest.9fc77e65568cd499.desc}"
+			]
+			dependencies: ["29D574ABF048F63D"]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			title: "{ftbquests.quest.b42fe8f53e6dd2d4.title}"
+			icon: "thermal:dynamo_stirling"
+			id: "B42FE8F53E6DD2D4"
+			tasks: [{
+				id: "EA987E9F6FDC072A"
+				type: "checkmark"
+				title: "{ftbquests.quest.b42fe8f53e6dd2d4.title}"
+			}]
+			description: [
+				"{ftbquests.quest.b42fe8f53e6dd2d4.desc}"
+			]
+			dependencies: ["9FC77E65568CD499"]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			title: "{ftbquests.quest.f3a7494538238afc.title}"
+			icon: "thermal:dynamo_stirling"
+			id: "F3A7494538238AFC"
+			tasks: [{
+				id: "06A03B6A5A4DE60E"
+				type: "checkmark"
+				title: "{ftbquests.quest.f3a7494538238afc.title}"
+			}]
+			description: [
+				"{ftbquests.quest.f3a7494538238afc.desc}"
+			]
+			dependencies: ["B42FE8F53E6DD2D4"]
+		}
+		{
+			x: 0.0d
+			y: 7.0d
+			title: "{ftbquests.quest.0d461725a91259e4.title}"
+			icon: "thermal:dynamo_stirling"
+			id: "0D461725A91259E4"
+			tasks: [{
+				id: "28CCE42272D510D9"
+				type: "checkmark"
+				title: "{ftbquests.quest.0d461725a91259e4.title}"
+			}]
+			description: [
+				"{ftbquests.quest.0d461725a91259e4.desc}"
+			]
+			dependencies: ["F3A7494538238AFC"]
+		}
+		{
+			x: 0.0d
+			y: 8.5d
+			title: "{ftbquests.quest.85082d1acf42808f.title}"
+			icon: "thermal:dynamo_stirling"
+			id: "85082D1ACF42808F"
+			tasks: [{
+				id: "F09F56AAB07F1E00"
+				type: "checkmark"
+				title: "{ftbquests.quest.85082d1acf42808f.title}"
+			}]
+			description: [
+				"{ftbquests.quest.85082d1acf42808f.desc}"
+			]
+			dependencies: ["0D461725A91259E4"]
+		}
+		{
+			x: 0.0d
+			y: 10.0d
+			title: "{ftbquests.quest.56eb0ce0fc7c2611.title}"
+			icon: "thermal:dynamo_stirling"
+			id: "56EB0CE0FC7C2611"
+			tasks: [{
+				id: "BEF955A7D153166E"
+				type: "checkmark"
+				title: "{ftbquests.quest.56eb0ce0fc7c2611.title}"
+			}]
+			description: [
+				"{ftbquests.quest.56eb0ce0fc7c2611.desc}"
+			]
+			dependencies: ["85082D1ACF42808F"]
+		}
+	]
+	quest_links: [ ]
+}

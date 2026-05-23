@@ -1,0 +1,1273 @@
+{
+  "total_quests": 178,
+  "by_age": {
+    "Age of Discovery": 16,
+    "Stone Age": 4,
+    "Chromatic Age": 6,
+    "Age of Automation": 7,
+    "Age of Power": 11,
+    "Age of Life": 10,
+    "Normal Gateways": 5,
+    "Titan Gateways": 4,
+    "Challenge Gateways": 1,
+    "Age of Farming": 5,
+    "Age of Travel": 5,
+    "Age of Miscellaneous": 7,
+    "Age of Magic": 54,
+    "Age of Legends": 5,
+    "Age of Hoarding": 5,
+    "Age of Worlds": 6,
+    "Age of Dragons": 12,
+    "Age of Simulation": 5,
+    "Age of Craziness": 6,
+    "AKA Nobody Is Crazy Enough to Actually Do This": 4
+  },
+  "quests": [
+    {
+      "age": "Age of Discovery",
+      "subcategory": null,
+      "index_in_age": 1,
+      "title": "Use the Crafting Stick to make a Colorless Crafting Table",
+      "raw": "Use the Crafting Stick to make a Colorless Crafting Table"
+    },
+    {
+      "age": "Age of Discovery",
+      "subcategory": null,
+      "index_in_age": 2,
+      "title": "Use a Barrel to create Dirt",
+      "raw": "Use a Barrel to create Dirt"
+    },
+    {
+      "age": "Age of Discovery",
+      "subcategory": null,
+      "index_in_age": 3,
+      "title": "Eat Dirt!",
+      "raw": "Eat Dirt!"
+    },
+    {
+      "age": "Age of Discovery",
+      "subcategory": null,
+      "index_in_age": 4,
+      "title": "Use Colored Planks to craft any Color Crafting Table",
+      "raw": "Use Colored Planks to craft any Color Crafting Table"
+    },
+    {
+      "age": "Age of Discovery",
+      "subcategory": null,
+      "index_in_age": 5,
+      "title": "Change the color of a Sapling by using Dye on it",
+      "raw": "Change the color of a Sapling by using Dye on it"
+    },
+    {
+      "age": "Age of Discovery",
+      "subcategory": null,
+      "index_in_age": 6,
+      "title": "Use any Dye and a Stick to make a Color Torch",
+      "raw": "Use any Dye and a Stick to make a Color Torch"
+    },
+    {
+      "age": "Age of Discovery",
+      "subcategory": null,
+      "index_in_age": 7,
+      "title": "Craft a Crafting Station to make recipes not available in the Color Crafting Tables",
+      "raw": "Craft a Crafting Station to make recipes not available in the Color Crafting Tables"
+    },
+    {
+      "age": "Age of Discovery",
+      "subcategory": null,
+      "index_in_age": 8,
+      "title": "Craft a Silent's Gear Sickle to break Leaves faster",
+      "raw": "Craft a Silent's Gear Sickle to break Leaves faster"
+    },
+    {
+      "age": "Age of Discovery",
+      "subcategory": null,
+      "index_in_age": 9,
+      "title": "Craft a Silent's Gear Axe to break Wood faster",
+      "raw": "Craft a Silent's Gear Axe to break Wood faster"
+    },
+    {
+      "age": "Age of Discovery",
+      "subcategory": null,
+      "index_in_age": 10,
+      "title": "Right Click with an Axe on a Log to get a Template Board",
+      "raw": "Right Click with an Axe on a Log to get a Template Board"
+    },
+    {
+      "age": "Age of Discovery",
+      "subcategory": null,
+      "index_in_age": 11,
+      "title": "Use a Crucible to melt Leaves or Saplings to get Water (or collect via rain)",
+      "raw": "Use a Crucible to melt Leaves or Saplings to get Water (or collect via rain)"
+    },
+    {
+      "age": "Age of Discovery",
+      "subcategory": null,
+      "index_in_age": 12,
+      "title": "Infest Leaves with a Silkworm to obtain String",
+      "raw": "Infest Leaves with a Silkworm to obtain String"
+    },
+    {
+      "age": "Age of Discovery",
+      "subcategory": null,
+      "index_in_age": 13,
+      "title": "Use a Campfire to obtain Ash and use it to craft Cobblestone",
+      "raw": "Use a Campfire to obtain Ash and use it to craft Cobblestone"
+    },
+    {
+      "age": "Age of Discovery",
+      "subcategory": null,
+      "index_in_age": 14,
+      "title": "Use a Hammer from Ex Nihilo or a Millstone to create Sand",
+      "raw": "Use a Hammer from Ex Nihilo or a Millstone to create Sand"
+    },
+    {
+      "age": "Age of Discovery",
+      "subcategory": null,
+      "index_in_age": 15,
+      "title": "Use Sand on a Barrel filled with Water to make Clay",
+      "raw": "Use Sand on a Barrel filled with Water to make Clay"
+    },
+    {
+      "age": "Age of Discovery",
+      "subcategory": null,
+      "index_in_age": 16,
+      "title": "Craft an Eccentric Tome to get all Guide Books",
+      "raw": "Craft an Eccentric Tome to get all Guide Books"
+    },
+    {
+      "age": "Stone Age",
+      "subcategory": null,
+      "index_in_age": 1,
+      "title": "Make Lava in a Fired Crucible",
+      "raw": "Make Lava in a Fired Crucible"
+    },
+    {
+      "age": "Stone Age",
+      "subcategory": null,
+      "index_in_age": 2,
+      "title": "Obtain Obsidian",
+      "raw": "Obtain Obsidian"
+    },
+    {
+      "age": "Stone Age",
+      "subcategory": null,
+      "index_in_age": 3,
+      "title": "Automate your Cobblestone generation",
+      "raw": "Automate your Cobblestone generation"
+    },
+    {
+      "age": "Stone Age",
+      "subcategory": null,
+      "index_in_age": 4,
+      "title": "Upgrade your Silent's Gear tools with a Stone Material (Cobblestone, Andesite, Diorite, Granite)",
+      "raw": "Upgrade your Silent's Gear tools with a Stone Material (Cobblestone, Andesite, Diorite, Granite)"
+    },
+    {
+      "age": "Chromatic Age",
+      "subcategory": null,
+      "index_in_age": 1,
+      "title": "Throw Dye into Water to change its color",
+      "raw": "Throw Dye into Water to change its color"
+    },
+    {
+      "age": "Chromatic Age",
+      "subcategory": null,
+      "index_in_age": 2,
+      "title": "Use Color Dyed Water to convert Sand into a Dye Block",
+      "raw": "Use Color Dyed Water to convert Sand into a Dye Block"
+    },
+    {
+      "age": "Chromatic Age",
+      "subcategory": null,
+      "index_in_age": 3,
+      "title": "Click on a Color Leaves block with Dye to create Flowers",
+      "raw": "Click on a Color Leaves block with Dye to create Flowers"
+    },
+    {
+      "age": "Chromatic Age",
+      "subcategory": null,
+      "index_in_age": 4,
+      "title": "Throw a Color Sapling into Water to change its color",
+      "raw": "Throw a Color Sapling into Water to change its color"
+    },
+    {
+      "age": "Chromatic Age",
+      "subcategory": null,
+      "index_in_age": 5,
+      "title": "Throw a Color Sapling into Fire or Lava to change its color",
+      "raw": "Throw a Color Sapling into Fire or Lava to change its color"
+    },
+    {
+      "age": "Chromatic Age",
+      "subcategory": null,
+      "index_in_age": 6,
+      "title": "Use Dripstone to convert a Block of Sand into a Dye Block",
+      "raw": "Use Dripstone to convert a Block of Sand into a Dye Block"
+    },
+    {
+      "age": "Age of Automation",
+      "subcategory": null,
+      "index_in_age": 1,
+      "title": "Use a Stirling or Combustion Generator to make power",
+      "raw": "Use a Stirling or Combustion Generator to make power"
+    },
+    {
+      "age": "Age of Automation",
+      "subcategory": null,
+      "index_in_age": 2,
+      "title": "Craft RGB Dye",
+      "raw": "Craft RGB Dye"
+    },
+    {
+      "age": "Age of Automation",
+      "subcategory": null,
+      "index_in_age": 3,
+      "title": "Craft a Blender to Mix Dyes together",
+      "raw": "Craft a Blender to Mix Dyes together"
+    },
+    {
+      "age": "Age of Automation",
+      "subcategory": null,
+      "index_in_age": 4,
+      "title": "Craft a Printer to automate resource collection",
+      "raw": "Craft a Printer to automate resource collection"
+    },
+    {
+      "age": "Age of Automation",
+      "subcategory": null,
+      "index_in_age": 5,
+      "title": "Obtain an EnderIO Grain of Infinity",
+      "raw": "Obtain an EnderIO Grain of Infinity"
+    },
+    {
+      "age": "Age of Automation",
+      "subcategory": null,
+      "index_in_age": 6,
+      "title": "Use a Pulverizer as a Catalyst in a Pulverizer",
+      "raw": "Use a Pulverizer as a Catalyst in a Pulverizer"
+    },
+    {
+      "age": "Age of Automation",
+      "subcategory": null,
+      "index_in_age": 7,
+      "title": "Speed up your machines by capturing the Warden with the Industrial Foregoing Souls mod",
+      "raw": "Speed up your machines by capturing the Warden with the Industrial Foregoing Souls mod"
+    },
+    {
+      "age": "Age of Power",
+      "subcategory": null,
+      "index_in_age": 1,
+      "title": "Create a Passively cooled reactor from the Bigger Reactors Mod",
+      "raw": "Create a Passively cooled reactor from the Bigger Reactors Mod"
+    },
+    {
+      "age": "Age of Power",
+      "subcategory": null,
+      "index_in_age": 2,
+      "title": "Create an Actively cooled reactor from the Bigger Reactors Mod",
+      "raw": "Create an Actively cooled reactor from the Bigger Reactors Mod"
+    },
+    {
+      "age": "Age of Power",
+      "subcategory": null,
+      "index_in_age": 3,
+      "title": "Create a 32x48x32 Passively cooled reactor",
+      "raw": "Create a 32x48x32 Passively cooled reactor"
+    },
+    {
+      "age": "Age of Power",
+      "subcategory": null,
+      "index_in_age": 4,
+      "title": "Create a Turbine from the Bigger Reactors Mod",
+      "raw": "Create a Turbine from the Bigger Reactors Mod"
+    },
+    {
+      "age": "Age of Power",
+      "subcategory": null,
+      "index_in_age": 5,
+      "title": "Produce 1,000 RF/t",
+      "raw": "Produce 1,000 RF/t"
+    },
+    {
+      "age": "Age of Power",
+      "subcategory": null,
+      "index_in_age": 6,
+      "title": "Produce 10,000 RF/t",
+      "raw": "Produce 10,000 RF/t"
+    },
+    {
+      "age": "Age of Power",
+      "subcategory": null,
+      "index_in_age": 7,
+      "title": "Produce 100k RF/t",
+      "raw": "Produce 100k RF/t"
+    },
+    {
+      "age": "Age of Power",
+      "subcategory": null,
+      "index_in_age": 8,
+      "title": "Produce 1 million RF/t",
+      "raw": "Produce 1 million RF/t"
+    },
+    {
+      "age": "Age of Power",
+      "subcategory": null,
+      "index_in_age": 9,
+      "title": "Craft Energetic Shears and use them to shear Energetic Sheep to collect energy",
+      "raw": "Craft Energetic Shears and use them to shear Energetic Sheep to collect energy"
+    },
+    {
+      "age": "Age of Power",
+      "subcategory": null,
+      "index_in_age": 10,
+      "title": "Use Energetic Shears or Energetic Wool to add power to a machine by discharging the shears or right-clicking the Wool in supported machines/batteries",
+      "raw": "Use Energetic Shears or Energetic Wool to add power to a machine by discharging the shears or right-clicking the Wool in supported machines/batteries"
+    },
+    {
+      "age": "Age of Power",
+      "subcategory": null,
+      "index_in_age": 11,
+      "title": "Collect all 16 colors of Energetic Sheep",
+      "raw": "Collect all 16 colors of Energetic Sheep"
+    },
+    {
+      "age": "Age of Life",
+      "subcategory": null,
+      "index_in_age": 1,
+      "title": "Herd all 16 Colorful Villagers (Villager Trades will automatically cycle after a short duration of time)",
+      "raw": "Herd all 16 Colorful Villagers (Villager Trades will automatically cycle after a short duration of time)"
+    },
+    {
+      "age": "Age of Life",
+      "subcategory": null,
+      "index_in_age": 2,
+      "title": "Obtain all 146 Trophies",
+      "raw": "Obtain all 146 Trophies"
+    },
+    {
+      "age": "Age of Life",
+      "subcategory": null,
+      "index_in_age": 3,
+      "title": "Find and pickup a Mob Spawner",
+      "raw": "Find and pickup a Mob Spawner"
+    },
+    {
+      "age": "Age of Life",
+      "subcategory": null,
+      "index_in_age": 4,
+      "title": "Change a Mob Spawner by right-clicking on it with a Trophy",
+      "raw": "Change a Mob Spawner by right-clicking on it with a Trophy"
+    },
+    {
+      "age": "Age of Life",
+      "subcategory": null,
+      "index_in_age": 5,
+      "title": "Use a Mega Torch to block creature spawns",
+      "raw": "Use a Mega Torch to block creature spawns"
+    },
+    {
+      "age": "Age of Life",
+      "subcategory": null,
+      "index_in_age": 6,
+      "title": "Build a Modular Golem",
+      "raw": "Build a Modular Golem"
+    },
+    {
+      "age": "Age of Life",
+      "subcategory": null,
+      "index_in_age": 7,
+      "title": "Build a Modular Wolf",
+      "raw": "Build a Modular Wolf"
+    },
+    {
+      "age": "Age of Life",
+      "subcategory": null,
+      "index_in_age": 8,
+      "title": "Build a Modular Humanoid",
+      "raw": "Build a Modular Humanoid"
+    },
+    {
+      "age": "Age of Life",
+      "subcategory": null,
+      "index_in_age": 9,
+      "title": "Gear up a Modular Golem with Netherite",
+      "raw": "Gear up a Modular Golem with Netherite"
+    },
+    {
+      "age": "Age of Life",
+      "subcategory": null,
+      "index_in_age": 10,
+      "title": "Fully upgrade a Modular Golem",
+      "raw": "Fully upgrade a Modular Golem"
+    },
+    {
+      "age": "Normal Gateways",
+      "subcategory": null,
+      "index_in_age": 1,
+      "title": "Obtain a Normal Gateway Pearl",
+      "raw": "Obtain a Normal Gateway Pearl"
+    },
+    {
+      "age": "Normal Gateways",
+      "subcategory": null,
+      "index_in_age": 2,
+      "title": "Complete a Gateway and receive a mob Trophy",
+      "raw": "Complete a Gateway and receive a mob Trophy"
+    },
+    {
+      "age": "Normal Gateways",
+      "subcategory": null,
+      "index_in_age": 3,
+      "title": "Right-click on a Trophy to activate it (and again to deactivate)",
+      "raw": "Right-click on a Trophy to activate it (and again to deactivate)"
+    },
+    {
+      "age": "Normal Gateways",
+      "subcategory": null,
+      "index_in_age": 4,
+      "title": "Complete all 146 Normal Gateways (not Titan)",
+      "raw": "Complete all 146 Normal Gateways (not Titan)"
+    },
+    {
+      "age": "Normal Gateways",
+      "subcategory": null,
+      "index_in_age": 5,
+      "title": "Complete the Normal Ender Dragon Gateway",
+      "raw": "Complete the Normal Ender Dragon Gateway"
+    },
+    {
+      "age": "Titan Gateways",
+      "subcategory": null,
+      "index_in_age": 1,
+      "title": "Obtain a Titan Gateway Pearl",
+      "raw": "Obtain a Titan Gateway Pearl"
+    },
+    {
+      "age": "Titan Gateways",
+      "subcategory": null,
+      "index_in_age": 2,
+      "title": "Complete wave 50 of any Titan Gateway",
+      "raw": "Complete wave 50 of any Titan Gateway"
+    },
+    {
+      "age": "Titan Gateways",
+      "subcategory": null,
+      "index_in_age": 3,
+      "title": "Complete wave 100 of any Titan Gateway",
+      "raw": "Complete wave 100 of any Titan Gateway"
+    },
+    {
+      "age": "Titan Gateways",
+      "subcategory": null,
+      "index_in_age": 4,
+      "title": "Complete wave 150 of any Titan Gateway",
+      "raw": "Complete wave 150 of any Titan Gateway"
+    },
+    {
+      "age": "Challenge Gateways",
+      "subcategory": null,
+      "index_in_age": 1,
+      "title": "Complete all 16 Challenge Gateways",
+      "raw": "Complete all 16 Challenge Gateways"
+    },
+    {
+      "age": "Age of Farming",
+      "subcategory": null,
+      "index_in_age": 1,
+      "title": "Obtain an Inferium Seed",
+      "raw": "Obtain an Inferium Seed"
+    },
+    {
+      "age": "Age of Farming",
+      "subcategory": null,
+      "index_in_age": 2,
+      "title": "Capture a Cow in a Jar",
+      "raw": "Capture a Cow in a Jar"
+    },
+    {
+      "age": "Age of Farming",
+      "subcategory": null,
+      "index_in_age": 3,
+      "title": "Grow Sugar Cane from the bottom of the world to max height (y=448)",
+      "raw": "Grow Sugar Cane from the bottom of the world to max height (y=448)"
+    },
+    {
+      "age": "Age of Farming",
+      "subcategory": null,
+      "index_in_age": 4,
+      "title": "Obtain all 16 color Mystical Agriculture Seeds",
+      "raw": "Obtain all 16 color Mystical Agriculture Seeds"
+    },
+    {
+      "age": "Age of Farming",
+      "subcategory": null,
+      "index_in_age": 5,
+      "title": "Obtain an RGB Essence Seed",
+      "raw": "Obtain an RGB Essence Seed"
+    },
+    {
+      "age": "Age of Travel",
+      "subcategory": null,
+      "index_in_age": 1,
+      "title": "Fly",
+      "raw": "Fly"
+    },
+    {
+      "age": "Age of Travel",
+      "subcategory": null,
+      "index_in_age": 2,
+      "title": "Craft a Wayback Stone to easily teleport to your spawn location from anywhere",
+      "raw": "Craft a Wayback Stone to easily teleport to your spawn location from anywhere"
+    },
+    {
+      "age": "Age of Travel",
+      "subcategory": null,
+      "index_in_age": 3,
+      "title": "Use a Bubble Blower to place a block in the air",
+      "raw": "Use a Bubble Blower to place a block in the air"
+    },
+    {
+      "age": "Age of Travel",
+      "subcategory": null,
+      "index_in_age": 4,
+      "title": "Travel to the Nether",
+      "raw": "Travel to the Nether"
+    },
+    {
+      "age": "Age of Travel",
+      "subcategory": null,
+      "index_in_age": 5,
+      "title": "Travel to the End",
+      "raw": "Travel to the End"
+    },
+    {
+      "age": "Age of Miscellaneous",
+      "subcategory": null,
+      "index_in_age": 1,
+      "title": "Craft a Create Sabers Saber",
+      "raw": "Craft a Create Sabers Saber"
+    },
+    {
+      "age": "Age of Miscellaneous",
+      "subcategory": null,
+      "index_in_age": 2,
+      "title": "Craft a Hammock to sleep to night time",
+      "raw": "Craft a Hammock to sleep to night time"
+    },
+    {
+      "age": "Age of Miscellaneous",
+      "subcategory": null,
+      "index_in_age": 3,
+      "title": "Fall through the void into a pool of water",
+      "raw": "Fall through the void into a pool of water"
+    },
+    {
+      "age": "Age of Miscellaneous",
+      "subcategory": null,
+      "index_in_age": 4,
+      "title": "Grow your head to 150% by crafting 2 of the same heads together",
+      "raw": "Grow your head to 150% by crafting 2 of the same heads together"
+    },
+    {
+      "age": "Age of Miscellaneous",
+      "subcategory": null,
+      "index_in_age": 5,
+      "title": "Grow your head to 250% by crafting 2 of the same heads together",
+      "raw": "Grow your head to 250% by crafting 2 of the same heads together"
+    },
+    {
+      "age": "Age of Miscellaneous",
+      "subcategory": null,
+      "index_in_age": 6,
+      "title": "Collect all 6 Limbs of any one mob (Head, Torso, Arms, Legs)",
+      "raw": "Collect all 6 Limbs of any one mob (Head, Torso, Arms, Legs)"
+    },
+    {
+      "age": "Age of Miscellaneous",
+      "subcategory": null,
+      "index_in_age": 7,
+      "title": "Use an Organic Matter Compressor to transform matter into Loot Bags",
+      "raw": "Use an Organic Matter Compressor to transform matter into Loot Bags"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 1,
+      "title": "Make a Source Gem",
+      "raw": "Make a Source Gem"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 2,
+      "title": "Make a Spellbook",
+      "raw": "Make a Spellbook"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 3,
+      "title": "Make a Scribe's Table",
+      "raw": "Make a Scribe's Table"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 4,
+      "title": "Generate Source for machines",
+      "raw": "Generate Source for machines"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 5,
+      "title": "Make an Enchanting Apparatus",
+      "raw": "Make an Enchanting Apparatus"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 6,
+      "title": "Make a Ritual Brazier",
+      "raw": "Make a Ritual Brazier"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 7,
+      "title": "Use a Crush Spell to automate Sand and Gravel",
+      "raw": "Use a Crush Spell to automate Sand and Gravel"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 8,
+      "title": "Use a Ritual of Summon Wilden and defeat them",
+      "raw": "Use a Ritual of Summon Wilden and defeat them"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 9,
+      "title": "Use a Ritual of Flight to fly around!",
+      "raw": "Use a Ritual of Flight to fly around!"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 10,
+      "title": "Summon a Weald Walker by performing an Awakening ritual near an Archwood Tree",
+      "raw": "Summon a Weald Walker by performing an Awakening ritual near an Archwood Tree"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 11,
+      "title": "Use Starbuncles to automate item retrieval",
+      "raw": "Use Starbuncles to automate item retrieval"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 12,
+      "title": "Use Wixies to automate Potion Brewing",
+      "raw": "Use Wixies to automate Potion Brewing"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 13,
+      "title": "Automate a farm with a Harvest Ritual",
+      "raw": "Automate a farm with a Harvest Ritual"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 14,
+      "title": "Make an island using a Conjure Island ritual (either plains or desert)",
+      "raw": "Make an island using a Conjure Island ritual (either plains or desert)"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 15,
+      "title": "Summon and defeat the Wilden Chimera",
+      "raw": "Summon and defeat the Wilden Chimera"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 16,
+      "title": "Automate a farm with Spell Turrets",
+      "raw": "Automate a farm with Spell Turrets"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 17,
+      "title": "Farm mob drops with Drygmies",
+      "raw": "Farm mob drops with Drygmies"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 18,
+      "title": "Summon a Decoy of yourself",
+      "raw": "Summon a Decoy of yourself"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 19,
+      "title": "Capture every boss in a Containment Jar",
+      "raw": "Capture every boss in a Containment Jar"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 20,
+      "title": "Generate Source using every type of Sourcelink",
+      "raw": "Generate Source using every type of Sourcelink"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 21,
+      "title": "Fully upgrade a set of Ars Nouveau armor (Tier 3 fill all thread slots)",
+      "raw": "Fully upgrade a set of Ars Nouveau armor (Tier 3 fill all thread slots)"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 22,
+      "title": "Summon a Familiar",
+      "raw": "Summon a Familiar"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 23,
+      "title": "Use a Scryer's Oculus to remotely access a block",
+      "raw": "Use a Scryer's Oculus to remotely access a block"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 24,
+      "title": "Teleport with a Warp Scroll/Portal",
+      "raw": "Teleport with a Warp Scroll/Portal"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Ars Nouveau",
+      "index_in_age": 25,
+      "title": "Use a Flask Cannon",
+      "raw": "Use a Flask Cannon"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Occultism",
+      "index_in_age": 26,
+      "title": "Eat Demon's Dream Fruit to get the 3rd Eye Effect",
+      "raw": "Eat Demon's Dream Fruit to get the 3rd Eye Effect"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Occultism",
+      "index_in_age": 27,
+      "title": "Make a Spiritfire",
+      "raw": "Make a Spiritfire"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Occultism",
+      "index_in_age": 28,
+      "title": "Obtain White Chalk",
+      "raw": "Obtain White Chalk"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Occultism",
+      "index_in_age": 29,
+      "title": "Summon a Crusher Spirit to help automate resources",
+      "raw": "Summon a Crusher Spirit to help automate resources"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Occultism",
+      "index_in_age": 30,
+      "title": "Summon a Possessed Endermite and kill it for Endstone",
+      "raw": "Summon a Possessed Endermite and kill it for Endstone"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Occultism",
+      "index_in_age": 31,
+      "title": "Use an Ars Nouveau Containment Jar to capture an Occultism Spirit, letting them work without decaying",
+      "raw": "Use an Ars Nouveau Containment Jar to capture an Occultism Spirit, letting them work without decaying"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Occultism",
+      "index_in_age": 32,
+      "title": "Capture one of each Trader Spirit in an Ars Nouveau Containment Jar",
+      "raw": "Capture one of each Trader Spirit in an Ars Nouveau Containment Jar"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Occultism",
+      "index_in_age": 33,
+      "title": "Create a Dimensional Matrix for mass item storage",
+      "raw": "Create a Dimensional Matrix for mass item storage"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Occultism",
+      "index_in_age": 34,
+      "title": "Summon a Djinni Machine Operator to automate crafting with the Dimensional Matrix",
+      "raw": "Summon a Djinni Machine Operator to automate crafting with the Dimensional Matrix"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Occultism",
+      "index_in_age": 35,
+      "title": "Use a Dimensional Mineshaft to automate resources",
+      "raw": "Use a Dimensional Mineshaft to automate resources"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Occultism",
+      "index_in_age": 36,
+      "title": "Have a Dimensional Matrix with max slots (12416, with one tier 4 on all sides including above and below)",
+      "raw": "Have a Dimensional Matrix with max slots (12416, with one tier 4 on all sides including above and below)"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Occultism",
+      "index_in_age": 37,
+      "title": "Summon an Afrit",
+      "raw": "Summon an Afrit"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Occultism",
+      "index_in_age": 38,
+      "title": "Summon the Wild Hunt and defeat it",
+      "raw": "Summon the Wild Hunt and defeat it"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Occultism",
+      "index_in_age": 39,
+      "title": "Use a Transporter Spirit to automate item transport",
+      "raw": "Use a Transporter Spirit to automate item transport"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Occultism",
+      "index_in_age": 40,
+      "title": "Use a Janitor Spirit to automate collecting items",
+      "raw": "Use a Janitor Spirit to automate collecting items"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Occultism",
+      "index_in_age": 41,
+      "title": "Summon a Familiar and capture it in a Familiar Ring",
+      "raw": "Summon a Familiar and capture it in a Familiar Ring"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Occultism",
+      "index_in_age": 42,
+      "title": "Summon a Demonic Wife/Husband",
+      "raw": "Summon a Demonic Wife/Husband"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Age of the Botanist",
+      "index_in_age": 43,
+      "title": "Craft a Petal Apothecary",
+      "raw": "Craft a Petal Apothecary"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Age of the Botanist",
+      "index_in_age": 44,
+      "title": "Create 64 Livingwood and 64 Livingrock with a Pure Daisy",
+      "raw": "Create 64 Livingwood and 64 Livingrock with a Pure Daisy"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Age of the Botanist",
+      "index_in_age": 45,
+      "title": "Craft a tiny potato and name it Direwolf20",
+      "raw": "Craft a tiny potato and name it Direwolf20"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Age of the Botanist",
+      "index_in_age": 46,
+      "title": "Craft a Mana Pool and a Mana Spreader",
+      "raw": "Craft a Mana Pool and a Mana Spreader"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Age of the Botanist",
+      "index_in_age": 47,
+      "title": "Craft a Wand of the Forest",
+      "raw": "Craft a Wand of the Forest"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Age of the Botanist",
+      "index_in_age": 48,
+      "title": "Create a portal to Alfheim",
+      "raw": "Create a portal to Alfheim"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Age of the Botanist",
+      "index_in_age": 49,
+      "title": "Use the portal to Alfheim to trade for Dye or resources",
+      "raw": "Use the portal to Alfheim to trade for Dye or resources"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Age of the Botanist",
+      "index_in_age": 50,
+      "title": "Create an automated flower farm with a Jaded Amaranthus",
+      "raw": "Create an automated flower farm with a Jaded Amaranthus"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Mastery",
+      "index_in_age": 51,
+      "title": "Automate a Pure Daisy with only Botania and vanilla mechanics",
+      "raw": "Automate a Pure Daisy with only Botania and vanilla mechanics"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Mastery",
+      "index_in_age": 52,
+      "title": "Craft and fill a Terrasteel Mana Ring",
+      "raw": "Craft and fill a Terrasteel Mana Ring"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Mastery",
+      "index_in_age": 53,
+      "title": "Complete the Ritual of Gaia",
+      "raw": "Complete the Ritual of Gaia"
+    },
+    {
+      "age": "Age of Magic",
+      "subcategory": "Mastery",
+      "index_in_age": 54,
+      "title": "Complete the Ritual of Gaia II",
+      "raw": "Complete the Ritual of Gaia II"
+    },
+    {
+      "age": "Age of Legends",
+      "subcategory": null,
+      "index_in_age": 1,
+      "title": "Defeat the Warden",
+      "raw": "Defeat the Warden"
+    },
+    {
+      "age": "Age of Legends",
+      "subcategory": null,
+      "index_in_age": 2,
+      "title": "Defeat the Ender Dragon",
+      "raw": "Defeat the Ender Dragon"
+    },
+    {
+      "age": "Age of Legends",
+      "subcategory": null,
+      "index_in_age": 3,
+      "title": "Defeat the Wither",
+      "raw": "Defeat the Wither"
+    },
+    {
+      "age": "Age of Legends",
+      "subcategory": null,
+      "index_in_age": 4,
+      "title": "Defeat the Gaia Guardian",
+      "raw": "Defeat the Gaia Guardian"
+    },
+    {
+      "age": "Age of Legends",
+      "subcategory": null,
+      "index_in_age": 5,
+      "title": "Defeat the Ghast Cow",
+      "raw": "Defeat the Ghast Cow"
+    },
+    {
+      "age": "Age of Hoarding",
+      "subcategory": null,
+      "index_in_age": 1,
+      "title": "Create a 9x9x9 Colossal Chest",
+      "raw": "Create a 9x9x9 Colossal Chest"
+    },
+    {
+      "age": "Age of Hoarding",
+      "subcategory": null,
+      "index_in_age": 2,
+      "title": "Obtain a Netherite Backpack from Sophisticated Backpacks",
+      "raw": "Obtain a Netherite Backpack from Sophisticated Backpacks"
+    },
+    {
+      "age": "Age of Hoarding",
+      "subcategory": null,
+      "index_in_age": 3,
+      "title": "Craft and use the Inception Upgrade in a Sophisticated Backpack to add more backpacks to your backpacks",
+      "raw": "Craft and use the Inception Upgrade in a Sophisticated Backpack to add more backpacks to your backpacks"
+    },
+    {
+      "age": "Age of Hoarding",
+      "subcategory": null,
+      "index_in_age": 4,
+      "title": "Craft and use the Everlasting Upgrade in a Sophisticated Backpack to keep your stuff safe from the void",
+      "raw": "Craft and use the Everlasting Upgrade in a Sophisticated Backpack to keep your stuff safe from the void"
+    },
+    {
+      "age": "Age of Hoarding",
+      "subcategory": null,
+      "index_in_age": 5,
+      "title": "Connect your Applied Energistics Storage System across dimensions using the Quantum Link Chamber",
+      "raw": "Connect your Applied Energistics Storage System across dimensions using the Quantum Link Chamber"
+    },
+    {
+      "age": "Age of Worlds",
+      "subcategory": null,
+      "index_in_age": 1,
+      "title": "Acquire and research a Lost Knowledge Pattern",
+      "raw": "Acquire and research a Lost Knowledge Pattern"
+    },
+    {
+      "age": "Age of Worlds",
+      "subcategory": null,
+      "index_in_age": 2,
+      "title": "Create and travel to an RFTools Dimension",
+      "raw": "Create and travel to an RFTools Dimension"
+    },
+    {
+      "age": "Age of Worlds",
+      "subcategory": null,
+      "index_in_age": 3,
+      "title": "Create a dimension full of Potatoes",
+      "raw": "Create a dimension full of Potatoes"
+    },
+    {
+      "age": "Age of Worlds",
+      "subcategory": null,
+      "index_in_age": 4,
+      "title": "Infuse your Infuser Machine to 100%",
+      "raw": "Infuse your Infuser Machine to 100%"
+    },
+    {
+      "age": "Age of Worlds",
+      "subcategory": null,
+      "index_in_age": 5,
+      "title": "Destroy a created dimension by sending a Block of TNT to a dimension with the Dimension Editor",
+      "raw": "Destroy a created dimension by sending a Block of TNT to a dimension with the Dimension Editor"
+    },
+    {
+      "age": "Age of Worlds",
+      "subcategory": null,
+      "index_in_age": 6,
+      "title": "Create a dimension of RGB Blocks",
+      "raw": "Create a dimension of RGB Blocks"
+    },
+    {
+      "age": "Age of Dragons",
+      "subcategory": null,
+      "index_in_age": 1,
+      "title": "Craft the Draconic Chestpiece",
+      "raw": "Craft the Draconic Chestpiece"
+    },
+    {
+      "age": "Age of Dragons",
+      "subcategory": null,
+      "index_in_age": 2,
+      "title": "Draconic Pickaxe",
+      "raw": "Draconic Pickaxe"
+    },
+    {
+      "age": "Age of Dragons",
+      "subcategory": null,
+      "index_in_age": 3,
+      "title": "Draconic Axe",
+      "raw": "Draconic Axe"
+    },
+    {
+      "age": "Age of Dragons",
+      "subcategory": null,
+      "index_in_age": 4,
+      "title": "Draconic Shovel",
+      "raw": "Draconic Shovel"
+    },
+    {
+      "age": "Age of Dragons",
+      "subcategory": null,
+      "index_in_age": 5,
+      "title": "Draconic Hoe",
+      "raw": "Draconic Hoe"
+    },
+    {
+      "age": "Age of Dragons",
+      "subcategory": null,
+      "index_in_age": 6,
+      "title": "Draconic Staff of Power",
+      "raw": "Draconic Staff of Power"
+    },
+    {
+      "age": "Age of Dragons",
+      "subcategory": null,
+      "index_in_age": 7,
+      "title": "Automate Wither killing",
+      "raw": "Automate Wither killing"
+    },
+    {
+      "age": "Age of Dragons",
+      "subcategory": null,
+      "index_in_age": 8,
+      "title": "Defeat the Chaos Dragon",
+      "raw": "Defeat the Chaos Dragon"
+    },
+    {
+      "age": "Age of Dragons",
+      "subcategory": null,
+      "index_in_age": 9,
+      "title": "Build a tier 6 Energy Core or Higher (Max is 8)",
+      "raw": "Build a tier 6 Energy Core or Higher (Max is 8)"
+    },
+    {
+      "age": "Age of Dragons",
+      "subcategory": null,
+      "index_in_age": 10,
+      "title": "Make a Charm of Dislocation",
+      "raw": "Make a Charm of Dislocation"
+    },
+    {
+      "age": "Age of Dragons",
+      "subcategory": null,
+      "index_in_age": 11,
+      "title": "Fill a tier 6 Draconic Energy Core",
+      "raw": "Fill a tier 6 Draconic Energy Core"
+    },
+    {
+      "age": "Age of Dragons",
+      "subcategory": null,
+      "index_in_age": 12,
+      "title": "Make a Draconic Chest",
+      "raw": "Make a Draconic Chest"
+    },
+    {
+      "age": "Age of Simulation",
+      "subcategory": null,
+      "index_in_age": 1,
+      "title": "Obtain a Hostile Neural Network Faulty Data Model for any mob",
+      "raw": "Obtain a Hostile Neural Network Faulty Data Model for any mob"
+    },
+    {
+      "age": "Age of Simulation",
+      "subcategory": null,
+      "index_in_age": 2,
+      "title": "Upgrade a Hostile Neural Network Data Model to Self Aware",
+      "raw": "Upgrade a Hostile Neural Network Data Model to Self Aware"
+    },
+    {
+      "age": "Age of Simulation",
+      "subcategory": null,
+      "index_in_age": 3,
+      "title": "Use the Wither Prediction in the Loot Fabricator to create Nether Stars",
+      "raw": "Use the Wither Prediction in the Loot Fabricator to create Nether Stars"
+    },
+    {
+      "age": "Age of Simulation",
+      "subcategory": null,
+      "index_in_age": 4,
+      "title": "Upgrade the Ender Dragon Data Model to Self Aware",
+      "raw": "Upgrade the Ender Dragon Data Model to Self Aware"
+    },
+    {
+      "age": "Age of Simulation",
+      "subcategory": null,
+      "index_in_age": 5,
+      "title": "Upgrade the Chaos Guardian Data Model to Self Aware",
+      "raw": "Upgrade the Chaos Guardian Data Model to Self Aware"
+    },
+    {
+      "age": "Age of Craziness",
+      "subcategory": null,
+      "index_in_age": 1,
+      "title": "Collect all 238 Hats",
+      "raw": "Collect all 238 Hats"
+    },
+    {
+      "age": "Age of Craziness",
+      "subcategory": null,
+      "index_in_age": 2,
+      "title": "Obtain 90 total hearts of health",
+      "raw": "Obtain 90 total hearts of health"
+    },
+    {
+      "age": "Age of Craziness",
+      "subcategory": null,
+      "index_in_age": 3,
+      "title": "Craft an Infinity Wand",
+      "raw": "Craft an Infinity Wand"
+    },
+    {
+      "age": "Age of Craziness",
+      "subcategory": null,
+      "index_in_age": 4,
+      "title": "Create a Perfect Sushi Roll",
+      "raw": "Create a Perfect Sushi Roll"
+    },
+    {
+      "age": "Age of Craziness",
+      "subcategory": null,
+      "index_in_age": 5,
+      "title": "Create a Culinary Construct Sandwich full of different types of Perfect Sushi",
+      "raw": "Create a Culinary Construct Sandwich full of different types of Perfect Sushi"
+    },
+    {
+      "age": "Age of Craziness",
+      "subcategory": null,
+      "index_in_age": 6,
+      "title": "Fill an entire chunk with Colorless Dye Blocks (16x448x16)",
+      "raw": "Fill an entire chunk with Colorless Dye Blocks (16x448x16)"
+    },
+    {
+      "age": "AKA Nobody Is Crazy Enough to Actually Do This",
+      "subcategory": null,
+      "index_in_age": 1,
+      "title": "Fill the Tier 8 Draconic Energy Core to max 9,223,000,000,000,000,000op",
+      "raw": "Fill the Tier 8 Draconic Energy Core to max 9,223,000,000,000,000,000op"
+    },
+    {
+      "age": "AKA Nobody Is Crazy Enough to Actually Do This",
+      "subcategory": null,
+      "index_in_age": 2,
+      "title": "Fill an Infinity Tool to max charge",
+      "raw": "Fill an Infinity Tool to max charge"
+    },
+    {
+      "age": "AKA Nobody Is Crazy Enough to Actually Do This",
+      "subcategory": null,
+      "index_in_age": 3,
+      "title": "Create a maximum size Passively cooled reactor (64x64x64)",
+      "raw": "Create a maximum size Passively cooled reactor (64x64x64)"
+    },
+    {
+      "age": "AKA Nobody Is Crazy Enough to Actually Do This",
+      "subcategory": null,
+      "index_in_age": 4,
+      "title": "Discover the SCP 1689 Dimension",
+      "raw": "Discover the SCP 1689 Dimension"
+    }
+  ]
+}

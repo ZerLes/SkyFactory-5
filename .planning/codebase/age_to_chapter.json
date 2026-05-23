@@ -1,0 +1,122 @@
+{
+  "Age of Discovery": {
+    "chapter": "getting_started",
+    "section": "discovery",
+    "x_offset": 0,
+    "y_base": 1.0
+  },
+  "Stone Age": {
+    "chapter": "getting_started",
+    "section": "stone",
+    "x_offset": 4,
+    "y_base": 1.0
+  },
+  "Chromatic Age": {
+    "chapter": "getting_started",
+    "section": "chromatic",
+    "x_offset": 8,
+    "y_base": 1.0
+  },
+  "Age of Automation": {
+    "chapter": "tech_basics",
+    "section": "automation",
+    "x_offset": 0,
+    "y_base": 1.0
+  },
+  "Age of Farming": {
+    "chapter": "resources",
+    "section": "farming",
+    "x_offset": 0,
+    "y_base": 1.0
+  },
+  "Age of Hoarding": {
+    "chapter": "storage",
+    "section": "hoarding",
+    "x_offset": 0,
+    "y_base": 1.0
+  },
+  "Age of Power": {
+    "chapter": "power",
+    "section": "power",
+    "x_offset": 0,
+    "y_base": 1.0
+  },
+  "Age of Life": {
+    "chapter": "advanced_tech",
+    "section": "life",
+    "x_offset": 0,
+    "y_base": 1.0
+  },
+  "Age of Simulation": {
+    "chapter": "advanced_tech",
+    "section": "simulation",
+    "x_offset": 4,
+    "y_base": 1.0
+  },
+  "Age of Magic": {
+    "chapter": "magic",
+    "section": "magic",
+    "x_offset": 0,
+    "y_base": 1.0
+  },
+  "Normal Gateways": {
+    "chapter": "exploration",
+    "section": "normal_gw",
+    "x_offset": 0,
+    "y_base": 1.0
+  },
+  "Titan Gateways": {
+    "chapter": "exploration",
+    "section": "titan_gw",
+    "x_offset": 4,
+    "y_base": 1.0
+  },
+  "Challenge Gateways": {
+    "chapter": "exploration",
+    "section": "challenge_gw",
+    "x_offset": 8,
+    "y_base": 1.0
+  },
+  "Age of Travel": {
+    "chapter": "exploration",
+    "section": "travel",
+    "x_offset": 12,
+    "y_base": 1.0
+  },
+  "Age of Worlds": {
+    "chapter": "exploration",
+    "section": "worlds",
+    "x_offset": 16,
+    "y_base": 1.0
+  },
+  "Age of Miscellaneous": {
+    "chapter": "miscellaneous",
+    "section": "misc",
+    "x_offset": 0,
+    "y_base": 1.0
+  },
+  "Age of Craziness": {
+    "chapter": "miscellaneous",
+    "section": "craziness",
+    "x_offset": 4,
+    "y_base": 1.0
+  },
+  "Age of Legends": {
+    "chapter": "endgame",
+    "section": "legends",
+    "x_offset": 0,
+    "y_base": 1.0
+  },
+  "Age of Dragons": {
+    "chapter": "endgame",
+    "section": "dragons",
+    "x_offset": 4,
+    "y_base": 1.0
+  },
+  "AKA Nobody Is Crazy Enough to Actually Do This": {
+    "chapter": "endgame",
+    "section": "crazy",
+    "x_offset": 8,
+    "y_base": 1.0
+  }
+}

@@ -46,27 +46,77 @@ async function main() {
   );
 
   //  Server
-  const forgeManager = new ForgeManager(
-    await readMinecraftPackage(),
-    minecraftDirPath,
+  // In CI we can't authenticate against Mojang to download the Forge installer.
+  // Set SF5_CI_SKIP_FORGE_DOWNLOAD=true to build the server zip without the installer;
+  // a SERVER_README.txt is added telling the operator which Forge build to fetch.
+  // Accept any common truthy spelling so developers running the build locally
+  // can use 1 / TRUE / True / yes interchangeably.
+  const skipForgeDownload = /^(1|true|yes|on)$/i.test(
+    process.env.SF5_CI_SKIP_FORGE_DOWNLOAD ?? "",
   );
-  const minecraftInstallerFilePath = await forgeManager.ensureDownloaded();
+
+  const additionalServerPaths: {
+    isFile?: boolean;
+    basePath: string;
+    zipFilePath: (filePath: string) => string;
+  }[] = [
+    {
+      basePath: path.join(process.cwd(), "src", "server"),
+      zipFilePath: (filePath) => path.basename(filePath),
+    },
+  ];
+
+  if (!skipForgeDownload) {
+    const forgeManager = new ForgeManager(
+      await readMinecraftPackage(),
+      minecraftDirPath,
+    );
+    const minecraftInstallerFilePath = await forgeManager.ensureDownloaded();
+    additionalServerPaths.unshift({
+      isFile: true,
+      basePath: path.relative(process.cwd(), minecraftInstallerFilePath),
+      zipFilePath: (filePath) => path.basename(filePath),
+    });
+  } else {
+    // mc-package.json is statically imported at the top of the file; reuse it
+    // instead of re-reading from disk.
+    const readmePath = path.join(releaseDirPath, "SERVER_README.txt");
+    const installerName = `forge-${mcPackage.minecraftVersion}-${mcPackage.forgeVersion}-installer.jar`;
+    const installerUrl = `https://maven.minecraftforge.net/net/minecraftforge/forge/${mcPackage.minecraftVersion}-${mcPackage.forgeVersion}/${installerName}`;
+    fs.writeFileSync(
+      readmePath,
+      [
+        `SkyFactory 5 Server v${mcPackage.version}`,
+        "",
+        "This server zip was built in CI without bundling the Forge installer.",
+        `Download the installer manually from:`,
+        `  ${installerUrl}`,
+        "",
+        "Then run:",
+        `  java -jar ${installerName} --installServer`,
+        "",
+        "and start the server with the included settings.sh / settings.bat.",
+        "",
+      ].join("\n"),
+      "utf-8",
+    );
+    additionalServerPaths.unshift({
+      isFile: true,
+      basePath: path.relative(process.cwd(), readmePath),
+      zipFilePath: (filePath) => path.basename(filePath),
+    });
+    console.log(
+      chalk.yellow(
+        `[CI] SF5_CI_SKIP_FORGE_DOWNLOAD=true — embedding SERVER_README.txt instead of forge installer`,
+      ),
+    );
+  }
 
   await createZip(
     directories,
     path.join(releaseDirPath, `${serverFileName}.zip`),
     serverIgnore,
-    [
-      {
-        isFile: true,
-        basePath: path.relative(process.cwd(), minecraftInstallerFilePath),
-        zipFilePath: (filePath) => path.basename(filePath),
-      },
-      {
-        basePath: path.join(process.cwd(), "src", "server"),
-        zipFilePath: (filePath) => path.basename(filePath),
-      },
-    ],
+    additionalServerPaths,
   );
 }
 

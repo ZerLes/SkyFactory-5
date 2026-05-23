@@ -1,0 +1,92 @@
+{
+	id: "B373C9E3C9B61672"
+	filename: "resources"
+	title: "{ftbquests.chapter.resources.title}"
+	icon: "minecraft:apple"
+	order_index: 2
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	group: ""
+	quests: [
+		{
+			x: 0.0d
+			y: 1.0d
+			title: "{ftbquests.quest.99d73a06452a428f.title}"
+			icon: "mysticalagriculture:inferium_seeds"
+			id: "99D73A06452A428F"
+			tasks: [{
+				id: "9FE4DACFD0D8F3EF"
+				type: "checkmark"
+				title: "{ftbquests.quest.99d73a06452a428f.title}"
+			}]
+			description: [
+				"{ftbquests.quest.99d73a06452a428f.desc}"
+			]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			title: "{ftbquests.quest.3b66800b01310464.title}"
+			icon: "mysticalagriculture:inferium_seeds"
+			id: "3B66800B01310464"
+			tasks: [{
+				id: "C380C8219ED7AC83"
+				type: "checkmark"
+				title: "{ftbquests.quest.3b66800b01310464.title}"
+			}]
+			description: [
+				"{ftbquests.quest.3b66800b01310464.desc}"
+			]
+			dependencies: ["99D73A06452A428F"]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			title: "{ftbquests.quest.dda76e5c25d631c1.title}"
+			icon: "mysticalagriculture:inferium_seeds"
+			id: "DDA76E5C25D631C1"
+			tasks: [{
+				id: "1BEC3A4002203D94"
+				type: "checkmark"
+				title: "{ftbquests.quest.dda76e5c25d631c1.title}"
+			}]
+			description: [
+				"{ftbquests.quest.dda76e5c25d631c1.desc}"
+			]
+			dependencies: ["3B66800B01310464"]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			title: "{ftbquests.quest.b19903869bd4e75d.title}"
+			icon: "mysticalagriculture:inferium_seeds"
+			id: "B19903869BD4E75D"
+			tasks: [{
+				id: "1551B2CA5BF60AF0"
+				type: "checkmark"
+				title: "{ftbquests.quest.b19903869bd4e75d.title}"
+			}]
+			description: [
+				"{ftbquests.quest.b19903869bd4e75d.desc}"
+			]
+			dependencies: ["DDA76E5C25D631C1"]
+		}
+		{
+			x: 0.0d
+			y: 7.0d
+			title: "{ftbquests.quest.5870399990402e62.title}"
+			icon: "mysticalagriculture:inferium_seeds"
+			id: "5870399990402E62"
+			tasks: [{
+				id: "62861B7FB18A5416"
+				type: "checkmark"
+				title: "{ftbquests.quest.5870399990402e62.title}"
+			}]
+			description: [
+				"{ftbquests.quest.5870399990402e62.desc}"
+			]
+			dependencies: ["B19903869BD4E75D"]
+		}
+	]
+	quest_links: [ ]
+}

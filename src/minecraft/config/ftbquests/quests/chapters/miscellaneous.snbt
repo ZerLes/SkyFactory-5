@@ -1,0 +1,219 @@
+{
+	id: "397C11D388A58999"
+	filename: "miscellaneous"
+	title: "{ftbquests.chapter.miscellaneous.title}"
+	icon: "minecraft:emerald"
+	order_index: 8
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	group: ""
+	quests: [
+		{
+			x: 0.0d
+			y: 1.0d
+			title: "{ftbquests.quest.dcd088d4aa40360d.title}"
+			icon: "minecraft:emerald"
+			id: "DCD088D4AA40360D"
+			tasks: [{
+				id: "91A46D748D7823AB"
+				type: "checkmark"
+				title: "{ftbquests.quest.dcd088d4aa40360d.title}"
+			}]
+			description: [
+				"{ftbquests.quest.dcd088d4aa40360d.desc}"
+			]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			title: "{ftbquests.quest.7f935f21e72b1b0c.title}"
+			icon: "minecraft:emerald"
+			id: "7F935F21E72B1B0C"
+			tasks: [{
+				id: "231DA625A5D00D12"
+				type: "checkmark"
+				title: "{ftbquests.quest.7f935f21e72b1b0c.title}"
+			}]
+			description: [
+				"{ftbquests.quest.7f935f21e72b1b0c.desc}"
+			]
+			dependencies: ["DCD088D4AA40360D"]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			title: "{ftbquests.quest.92b64aa261c3431d.title}"
+			icon: "minecraft:emerald"
+			id: "92B64AA261C3431D"
+			tasks: [{
+				id: "5672FFDB6082979B"
+				type: "checkmark"
+				title: "{ftbquests.quest.92b64aa261c3431d.title}"
+			}]
+			description: [
+				"{ftbquests.quest.92b64aa261c3431d.desc}"
+			]
+			dependencies: ["7F935F21E72B1B0C"]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			title: "{ftbquests.quest.0b8ac05f255f4a5d.title}"
+			icon: "minecraft:emerald"
+			id: "0B8AC05F255F4A5D"
+			tasks: [{
+				id: "9F00C36C367D85A3"
+				type: "checkmark"
+				title: "{ftbquests.quest.0b8ac05f255f4a5d.title}"
+			}]
+			description: [
+				"{ftbquests.quest.0b8ac05f255f4a5d.desc}"
+			]
+			dependencies: ["92B64AA261C3431D"]
+		}
+		{
+			x: 0.0d
+			y: 7.0d
+			title: "{ftbquests.quest.da6d3efad2748cf6.title}"
+			icon: "minecraft:emerald"
+			id: "DA6D3EFAD2748CF6"
+			tasks: [{
+				id: "7809768410B7B59A"
+				type: "checkmark"
+				title: "{ftbquests.quest.da6d3efad2748cf6.title}"
+			}]
+			description: [
+				"{ftbquests.quest.da6d3efad2748cf6.desc}"
+			]
+			dependencies: ["0B8AC05F255F4A5D"]
+		}
+		{
+			x: 0.0d
+			y: 8.5d
+			title: "{ftbquests.quest.b9facce5203636fb.title}"
+			icon: "minecraft:emerald"
+			id: "B9FACCE5203636FB"
+			tasks: [{
+				id: "EF2D4B6C856FC64E"
+				type: "checkmark"
+				title: "{ftbquests.quest.b9facce5203636fb.title}"
+			}]
+			description: [
+				"{ftbquests.quest.b9facce5203636fb.desc}"
+			]
+			dependencies: ["DA6D3EFAD2748CF6"]
+		}
+		{
+			x: 0.0d
+			y: 10.0d
+			title: "{ftbquests.quest.bf23ca1841b88524.title}"
+			icon: "minecraft:emerald"
+			id: "BF23CA1841B88524"
+			tasks: [{
+				id: "6395152D643853C5"
+				type: "checkmark"
+				title: "{ftbquests.quest.bf23ca1841b88524.title}"
+			}]
+			description: [
+				"{ftbquests.quest.bf23ca1841b88524.desc}"
+			]
+			dependencies: ["B9FACCE5203636FB"]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			title: "{ftbquests.quest.656a9b0515a5e26e.title}"
+			icon: "minecraft:nether_star"
+			id: "656A9B0515A5E26E"
+			tasks: [{
+				id: "EAE05097A305B340"
+				type: "checkmark"
+				title: "{ftbquests.quest.656a9b0515a5e26e.title}"
+			}]
+			description: [
+				"{ftbquests.quest.656a9b0515a5e26e.desc}"
+			]
+		}
+		{
+			x: 4.0d
+			y: 2.5d
+			title: "{ftbquests.quest.f278820b5c7f605b.title}"
+			icon: "minecraft:nether_star"
+			id: "F278820B5C7F605B"
+			tasks: [{
+				id: "CA50F984A64535CD"
+				type: "checkmark"
+				title: "{ftbquests.quest.f278820b5c7f605b.title}"
+			}]
+			description: [
+				"{ftbquests.quest.f278820b5c7f605b.desc}"
+			]
+			dependencies: ["656A9B0515A5E26E"]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			title: "{ftbquests.quest.e77179da45a2a059.title}"
+			icon: "minecraft:nether_star"
+			id: "E77179DA45A2A059"
+			tasks: [{
+				id: "B13827D339AD0137"
+				type: "checkmark"
+				title: "{ftbquests.quest.e77179da45a2a059.title}"
+			}]
+			description: [
+				"{ftbquests.quest.e77179da45a2a059.desc}"
+			]
+			dependencies: ["F278820B5C7F605B"]
+		}
+		{
+			x: 4.0d
+			y: 5.5d
+			title: "{ftbquests.quest.2a3bc783b86db78f.title}"
+			icon: "minecraft:nether_star"
+			id: "2A3BC783B86DB78F"
+			tasks: [{
+				id: "194D3D2D08FFE7DA"
+				type: "checkmark"
+				title: "{ftbquests.quest.2a3bc783b86db78f.title}"
+			}]
+			description: [
+				"{ftbquests.quest.2a3bc783b86db78f.desc}"
+			]
+			dependencies: ["E77179DA45A2A059"]
+		}
+		{
+			x: 4.0d
+			y: 7.0d
+			title: "{ftbquests.quest.b767148678475c80.title}"
+			icon: "minecraft:nether_star"
+			id: "B767148678475C80"
+			tasks: [{
+				id: "5CDABC50CDF87D88"
+				type: "checkmark"
+				title: "{ftbquests.quest.b767148678475c80.title}"
+			}]
+			description: [
+				"{ftbquests.quest.b767148678475c80.desc}"
+			]
+			dependencies: ["2A3BC783B86DB78F"]
+		}
+		{
+			x: 4.0d
+			y: 8.5d
+			title: "{ftbquests.quest.c87dac53e2b959c8.title}"
+			icon: "minecraft:nether_star"
+			id: "C87DAC53E2B959C8"
+			tasks: [{
+				id: "326C1F9CB78C579B"
+				type: "checkmark"
+				title: "{ftbquests.quest.c87dac53e2b959c8.title}"
+			}]
+			description: [
+				"{ftbquests.quest.c87dac53e2b959c8.desc}"
+			]
+			dependencies: ["B767148678475C80"]
+		}
+	]
+	quest_links: [ ]
+}

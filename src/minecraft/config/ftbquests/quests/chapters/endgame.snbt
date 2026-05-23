@@ -1,0 +1,346 @@
+{
+	id: "43AF5A6C91030254"
+	filename: "endgame"
+	title: "{ftbquests.chapter.endgame.title}"
+	icon: "minecraft:dragon_head"
+	order_index: 9
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	group: ""
+	quests: [
+		{
+			x: 0.0d
+			y: 1.0d
+			title: "{ftbquests.quest.06824c34dee61e42.title}"
+			icon: "minecraft:netherite_ingot"
+			id: "06824C34DEE61E42"
+			tasks: [{
+				id: "DDD3D2041B8889B0"
+				type: "checkmark"
+				title: "{ftbquests.quest.06824c34dee61e42.title}"
+			}]
+			description: [
+				"{ftbquests.quest.06824c34dee61e42.desc}"
+			]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			title: "{ftbquests.quest.64480db74922cc42.title}"
+			icon: "minecraft:netherite_ingot"
+			id: "64480DB74922CC42"
+			tasks: [{
+				id: "BAD9FB3953400BA2"
+				type: "checkmark"
+				title: "{ftbquests.quest.64480db74922cc42.title}"
+			}]
+			description: [
+				"{ftbquests.quest.64480db74922cc42.desc}"
+			]
+			dependencies: ["06824C34DEE61E42"]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			title: "{ftbquests.quest.9fa6e13672144ca2.title}"
+			icon: "minecraft:netherite_ingot"
+			id: "9FA6E13672144CA2"
+			tasks: [{
+				id: "727EDB1B23FD888C"
+				type: "checkmark"
+				title: "{ftbquests.quest.9fa6e13672144ca2.title}"
+			}]
+			description: [
+				"{ftbquests.quest.9fa6e13672144ca2.desc}"
+			]
+			dependencies: ["64480DB74922CC42"]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			title: "{ftbquests.quest.fb171cfe49298303.title}"
+			icon: "minecraft:netherite_ingot"
+			id: "FB171CFE49298303"
+			tasks: [{
+				id: "587F8DC63CA8455B"
+				type: "checkmark"
+				title: "{ftbquests.quest.fb171cfe49298303.title}"
+			}]
+			description: [
+				"{ftbquests.quest.fb171cfe49298303.desc}"
+			]
+			dependencies: ["9FA6E13672144CA2"]
+		}
+		{
+			x: 0.0d
+			y: 7.0d
+			title: "{ftbquests.quest.6cc98947bee95f94.title}"
+			icon: "minecraft:netherite_ingot"
+			id: "6CC98947BEE95F94"
+			tasks: [{
+				id: "48AD08A772FB3893"
+				type: "checkmark"
+				title: "{ftbquests.quest.6cc98947bee95f94.title}"
+			}]
+			description: [
+				"{ftbquests.quest.6cc98947bee95f94.desc}"
+			]
+			dependencies: ["FB171CFE49298303"]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			title: "{ftbquests.quest.cca35b14e190f3db.title}"
+			icon: "minecraft:dragon_egg"
+			id: "CCA35B14E190F3DB"
+			tasks: [{
+				id: "733BA1DB75C4D1F0"
+				type: "checkmark"
+				title: "{ftbquests.quest.cca35b14e190f3db.title}"
+			}]
+			description: [
+				"{ftbquests.quest.cca35b14e190f3db.desc}"
+			]
+		}
+		{
+			x: 4.0d
+			y: 2.5d
+			title: "{ftbquests.quest.e8db52eb123210a4.title}"
+			icon: "minecraft:dragon_egg"
+			id: "E8DB52EB123210A4"
+			tasks: [{
+				id: "1E2FB50F6C7C6629"
+				type: "checkmark"
+				title: "{ftbquests.quest.e8db52eb123210a4.title}"
+			}]
+			description: [
+				"{ftbquests.quest.e8db52eb123210a4.desc}"
+			]
+			dependencies: ["CCA35B14E190F3DB"]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			title: "{ftbquests.quest.8b35807df32929b1.title}"
+			icon: "minecraft:dragon_egg"
+			id: "8B35807DF32929B1"
+			tasks: [{
+				id: "7A4476E6A90CE510"
+				type: "checkmark"
+				title: "{ftbquests.quest.8b35807df32929b1.title}"
+			}]
+			description: [
+				"{ftbquests.quest.8b35807df32929b1.desc}"
+			]
+			dependencies: ["E8DB52EB123210A4"]
+		}
+		{
+			x: 4.0d
+			y: 5.5d
+			title: "{ftbquests.quest.098b882974f42c95.title}"
+			icon: "minecraft:dragon_egg"
+			id: "098B882974F42C95"
+			tasks: [{
+				id: "9D8C56870FBE5232"
+				type: "checkmark"
+				title: "{ftbquests.quest.098b882974f42c95.title}"
+			}]
+			description: [
+				"{ftbquests.quest.098b882974f42c95.desc}"
+			]
+			dependencies: ["8B35807DF32929B1"]
+		}
+		{
+			x: 4.0d
+			y: 7.0d
+			title: "{ftbquests.quest.a6e5cc4ba4f25132.title}"
+			icon: "minecraft:dragon_egg"
+			id: "A6E5CC4BA4F25132"
+			tasks: [{
+				id: "7C6B94A2BA304BE4"
+				type: "checkmark"
+				title: "{ftbquests.quest.a6e5cc4ba4f25132.title}"
+			}]
+			description: [
+				"{ftbquests.quest.a6e5cc4ba4f25132.desc}"
+			]
+			dependencies: ["098B882974F42C95"]
+		}
+		{
+			x: 4.0d
+			y: 8.5d
+			title: "{ftbquests.quest.b5f0f8477b0c4c95.title}"
+			icon: "minecraft:dragon_egg"
+			id: "B5F0F8477B0C4C95"
+			tasks: [{
+				id: "50DEB0ECE593B864"
+				type: "checkmark"
+				title: "{ftbquests.quest.b5f0f8477b0c4c95.title}"
+			}]
+			description: [
+				"{ftbquests.quest.b5f0f8477b0c4c95.desc}"
+			]
+			dependencies: ["A6E5CC4BA4F25132"]
+		}
+		{
+			x: 4.0d
+			y: 10.0d
+			title: "{ftbquests.quest.fb60fd94872ae96a.title}"
+			icon: "minecraft:dragon_egg"
+			id: "FB60FD94872AE96A"
+			tasks: [{
+				id: "C5DE9ABA7F46EF89"
+				type: "checkmark"
+				title: "{ftbquests.quest.fb60fd94872ae96a.title}"
+			}]
+			description: [
+				"{ftbquests.quest.fb60fd94872ae96a.desc}"
+			]
+			dependencies: ["B5F0F8477B0C4C95"]
+		}
+		{
+			x: 4.0d
+			y: 11.5d
+			title: "{ftbquests.quest.f93f3dbc2e237b89.title}"
+			icon: "minecraft:dragon_egg"
+			id: "F93F3DBC2E237B89"
+			tasks: [{
+				id: "F4B75D0E9A76D789"
+				type: "checkmark"
+				title: "{ftbquests.quest.f93f3dbc2e237b89.title}"
+			}]
+			description: [
+				"{ftbquests.quest.f93f3dbc2e237b89.desc}"
+			]
+			dependencies: ["FB60FD94872AE96A"]
+		}
+		{
+			x: 4.0d
+			y: 13.0d
+			title: "{ftbquests.quest.b221cf216acdab52.title}"
+			icon: "minecraft:dragon_egg"
+			id: "B221CF216ACDAB52"
+			tasks: [{
+				id: "B7D0DE86AC887C3B"
+				type: "checkmark"
+				title: "{ftbquests.quest.b221cf216acdab52.title}"
+			}]
+			description: [
+				"{ftbquests.quest.b221cf216acdab52.desc}"
+			]
+			dependencies: ["F93F3DBC2E237B89"]
+		}
+		{
+			x: 4.0d
+			y: 14.5d
+			title: "{ftbquests.quest.881efec576a9f647.title}"
+			icon: "minecraft:dragon_egg"
+			id: "881EFEC576A9F647"
+			tasks: [{
+				id: "1E73F7CD7E3D126D"
+				type: "checkmark"
+				title: "{ftbquests.quest.881efec576a9f647.title}"
+			}]
+			description: [
+				"{ftbquests.quest.881efec576a9f647.desc}"
+			]
+			dependencies: ["B221CF216ACDAB52"]
+		}
+		{
+			x: 4.0d
+			y: 16.0d
+			title: "{ftbquests.quest.487a7268cfd7ed30.title}"
+			icon: "minecraft:dragon_egg"
+			id: "487A7268CFD7ED30"
+			tasks: [{
+				id: "7B6BCF451738B59B"
+				type: "checkmark"
+				title: "{ftbquests.quest.487a7268cfd7ed30.title}"
+			}]
+			description: [
+				"{ftbquests.quest.487a7268cfd7ed30.desc}"
+			]
+			dependencies: ["881EFEC576A9F647"]
+		}
+		{
+			x: 4.0d
+			y: 17.5d
+			title: "{ftbquests.quest.0b7eb72226b2b423.title}"
+			icon: "minecraft:dragon_egg"
+			id: "0B7EB72226B2B423"
+			tasks: [{
+				id: "9A54D240944F7247"
+				type: "checkmark"
+				title: "{ftbquests.quest.0b7eb72226b2b423.title}"
+			}]
+			description: [
+				"{ftbquests.quest.0b7eb72226b2b423.desc}"
+			]
+			dependencies: ["487A7268CFD7ED30"]
+		}
+		{
+			x: 8.0d
+			y: 1.0d
+			title: "{ftbquests.quest.951dfedf8b10ec78.title}"
+			icon: "minecraft:command_block"
+			id: "951DFEDF8B10EC78"
+			tasks: [{
+				id: "04A8515E6A377994"
+				type: "checkmark"
+				title: "{ftbquests.quest.951dfedf8b10ec78.title}"
+			}]
+			description: [
+				"{ftbquests.quest.951dfedf8b10ec78.desc}"
+			]
+		}
+		{
+			x: 8.0d
+			y: 2.5d
+			title: "{ftbquests.quest.58bd3b5302a33a92.title}"
+			icon: "minecraft:command_block"
+			id: "58BD3B5302A33A92"
+			tasks: [{
+				id: "73A83B63DA4139B5"
+				type: "checkmark"
+				title: "{ftbquests.quest.58bd3b5302a33a92.title}"
+			}]
+			description: [
+				"{ftbquests.quest.58bd3b5302a33a92.desc}"
+			]
+			dependencies: ["951DFEDF8B10EC78"]
+		}
+		{
+			x: 8.0d
+			y: 4.0d
+			title: "{ftbquests.quest.fa2a04f83d9fb11e.title}"
+			icon: "minecraft:command_block"
+			id: "FA2A04F83D9FB11E"
+			tasks: [{
+				id: "65FB7806294BA6C3"
+				type: "checkmark"
+				title: "{ftbquests.quest.fa2a04f83d9fb11e.title}"
+			}]
+			description: [
+				"{ftbquests.quest.fa2a04f83d9fb11e.desc}"
+			]
+			dependencies: ["58BD3B5302A33A92"]
+		}
+		{
+			x: 8.0d
+			y: 5.5d
+			title: "{ftbquests.quest.cac0b1f8b73318d7.title}"
+			icon: "minecraft:command_block"
+			id: "CAC0B1F8B73318D7"
+			tasks: [{
+				id: "5C571E6B3240ADF4"
+				type: "checkmark"
+				title: "{ftbquests.quest.cac0b1f8b73318d7.title}"
+			}]
+			description: [
+				"{ftbquests.quest.cac0b1f8b73318d7.desc}"
+			]
+			dependencies: ["FA2A04F83D9FB11E"]
+		}
+	]
+	quest_links: [ ]
+}
